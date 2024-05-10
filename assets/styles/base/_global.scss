@@ -1,0 +1,133 @@
+:root {
+    --main-padding-h: 4.38rem;
+    --main-padding-v: 6.25rem;
+    --nav-padding-v: 2rem;
+    --dropdown-padding-v: 7.81em;
+    --max-width: 1440px;
+    --hover-duration: .3s;
+    --dropdown-duration: .8s;
+    --dropdown-cubic: cubic-bezier(0.49, 0.17, 0, 0.87);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+}
+
+main {
+    position: relative;
+    z-index: 3;
+    background-color: var(--primary-light);
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    transition: filter var(--dropdown-duration) var(--dropdown-cubic);
+}
+
+section {
+    width: 100%;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+p > a {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+}
+
+.favicon {
+    width: 1.92325rem;
+    height: 1.92325rem;
+}
+
+.logo-inline {
+    width: 50.27931rem;
+    height: 6.25rem;
+    fill: var(--primary-dark);
+}
+
+.logo-square {
+    width: 15.625rem;
+    height: 15.625rem;
+    fill: var(--primary-dark);
+}
+
+#cookies {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    opacity: 1;
+    max-width: 100%;
+    transition: opacity var(--hover-duration) ease-in-out;
+    z-index: 10;
+}
+
+.display-mobile {
+    display: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1280px) {
+    :root {
+        --main-padding-h: 1.25rem;
+        --main-padding-v: 4rem;
+        --nav-padding-v: 2rem;
+        --dropdown-padding-v: 7.81em;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .hide-mobile {
+        display: none;
+    }
+    .display-mobile {
+        display: block;
+    }
+
+    :root {
+        --main-padding-h: 1.25rem;
+        --main-padding-v: 4rem;
+        --nav-padding-v: 2rem;
+        --dropdown-padding-v: 7.81em;
+    }
+
+    #cookies {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        opacity: 1;
+        max-width: 100%;
+        transition: opacity var(--hover-duration) ease-in-out;
+        z-index: 10;
+    }
+}

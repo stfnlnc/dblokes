@@ -1,0 +1,21 @@
+.icon {
+    height: 0.875rem;
+    fill: var(--primary-light);
+    transition: fill .3s;
+    &--primary-dark {
+        fill: var(--primary-dark);
+    }
+    &--primary-light {
+        fill: var(--primary-light);
+    }
+    &--primary-grey {
+        fill: var(--primary-grey);
+    }
+    &--stroke-dark {
+        fill: var(--stroke-dark);
+    }
+    &--stroke-light {
+        fill: var(--stroke-light);
+    }
+}
+

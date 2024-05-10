@@ -1,0 +1,31 @@
+.gap {
+    @for $i from 0 through 20 {
+        $s: 0;
+        @if $i == 0 { $s: 0 } @else {$s: #{$i * 5}px}
+        &--#{$i} {
+            gap: #{$s}
+        }
+    }
+}
+
+.grid-gap {
+    @for $i from 0 through 20 {
+        $s: 0;
+        @if $i == 0 { $s: 0 } @else {$s: #{$i * 5}px}
+        &--#{$i} {
+            grid-gap: #{$s}
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .gap-mobile {
+        gap: 0.3rem
+    }
+    .gap-small-mobile {
+        gap: 1rem
+    }
+    .gap-large-mobile {
+        gap: 2rem
+    }
+}

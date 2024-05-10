@@ -1,0 +1,22 @@
+.h-auto {
+    height: auto;
+}
+
+.h-fit-content {
+    height: fit-content;
+}
+
+@for $i from 1 through 10 {
+    $h: $i * 10;
+    .h {
+        &--#{$h} {
+            height: #{$h}#{'vh'}
+        }
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .h-50-mobile {
+        height: 30vh;
+    }
+}

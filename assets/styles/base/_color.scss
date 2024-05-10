@@ -1,0 +1,118 @@
+:root {
+    --primary-dark: #191919;
+    --primary-light: #FFFFFF;
+    --primary-grey: #808182;
+    --secondary-green: #D3E0D3;
+    --secondary-blue: #CDDFE6;
+    --secondary-violet: #DAD6EA;
+    --secondary-beige: #EAE0D6;
+    --stroke-light: #E0E0E0;
+    --stroke-dark: #3F3E3E;
+    --info: #e0d94d;
+    --success: #4de08d;
+    --danger: #e04d4d;
+}
+
+.primary-dark {
+    color: var(--primary-dark);
+
+    &--bg {
+        background-color: var(--primary-dark);
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.primary-light {
+    color: var(--primary-light);
+
+    &--bg {
+        background-color: var(--primary-light);
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.primary-grey {
+    color: var(--primary-grey);
+
+    &--bg {
+        background-color: var(--primary-grey);
+    }
+}
+
+.secondary-green {
+    color: var(--secondary-green);
+    &--bg {
+        background-color: var(--secondary-green);
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.secondary-blue {
+    color: var(--secondary-blue);
+    &--bg {
+        background-color: var(--secondary-blue);
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.secondary-violet {
+    color: var(--secondary-violet);
+    &--bg {
+        background-color: var(--secondary-violet);
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.secondary-beige {
+    color: var(--secondary-beige);
+    &--bg {
+        background-color: var(--secondary-beige);
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.stroke-light {
+    color: var(--stroke-light);
+
+    &--bg {
+        background-color: var(--stroke-light);
+    }
+}
+
+.stroke-dark {
+    color: var(--stroke-dark);
+
+    &--bg {
+        background-color: var(--stroke-dark);
+    }
+}
+
+.info {
+    color: var(--info);
+
+    &--bg {
+        background-color: var(--info);
+    }
+}
+
+.success {
+    color: var(--success);
+
+    &--bg {
+        background-color: var(--success);
+    }
+}
+
+.danger {
+    color: var(--danger);
+
+    &--bg {
+        background-color: var(--danger);
+    }
+}

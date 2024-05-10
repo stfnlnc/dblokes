@@ -1,0 +1,45 @@
+$pos: ("t": top, "b": bottom, "l": left, "r": right);
+
+.border {
+    border: 1px solid var(--primary-dark);
+    @each $key, $p in $pos {
+        &--#{$p} {
+            border-#{$p}: 1px solid;
+        }
+    }
+    &-dark {
+        border-color: var(--primary-dark);
+    }
+    &-light {
+        border-color: var(--primary-light);
+    }
+    &-grey {
+        border-color: var(--primary-grey);
+    }
+    &-stroke-dark {
+        border-color: var(--stroke-dark);
+    }
+    &-stroke-light {
+        border-color: var(--stroke-light);
+
+    }
+}
+
+.border-rounded {
+    border-radius: 1rem;
+}
+
+.border-dashed {
+    border-style: none none dashed none;
+}
+
+@media screen and (max-width: 1080px) {
+    .border {
+        border: 1px solid var(--primary-dark);
+        @each $key, $p in $pos {
+            &--#{$p}-mobile {
+                border-#{$p}: 1px solid;
+            }
+        }
+    }
+}
