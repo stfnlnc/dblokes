@@ -1,5 +1,5 @@
 p {
-    font-family: "Inter", sans-serif;
+    font-family: "Overused Grotesk", sans-serif;
     font-weight: 400;
     margin: 0;
 }
@@ -9,21 +9,21 @@ p {
     letter-spacing: 0;
 
     &__s {
-        font-size: 1rem;
+        font-size: 0.875rem;
         line-height: 150%;
         letter-spacing: 0;
     }
 
     &__m {
-        font-size: 1.1875rem;
+        font-size: 1.125rem;
         line-height: 150%;
-        letter-spacing: -3%;
+        letter-spacing: 0;
     }
 
     &__l {
-        font-size: 1.625rem;
+        font-size: 1.5rem;
         line-height: 150%;
-        letter-spacing: -3%;
+        letter-spacing: 0;
     }
 }
 
@@ -46,6 +46,10 @@ p {
 
 .overline {
     text-decoration: overline;
+}
+
+.italic {
+   font-style: italic;
 }
 
 .text-center {

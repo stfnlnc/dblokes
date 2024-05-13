@@ -1,0 +1,176 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }}{% endblock %}
+
+{% block body %}
+
+    <section class="container__large"
+             style="background-image: linear-gradient(rgba(0,0,0,0.6) 50%, rgba(0,0,0,0)), url({{ asset('images/home-background.webp') }}); background-position: center; background-size: cover;">
+        <div class="container container__top flex col align--center justify--center gap--4">
+            <img class="header__logo" src="{{ asset('images/logo.svg') }}" alt="Logo D-Blokés">
+            <a href="#" class="btn btn__lg">Découvrir l'asso</a>
+        </div>
+    </section>
+    <section class="container__large secondary-dark--bg primary-light">
+        <div class="container flex row align--center justify--center gap--8 col-mobile">
+            <div class="w--50 w-100-mobile">
+                <h3 class="w--70"><span class="italic">Escalade</span> et développement de sites dans les <span class="italic">Pyrénées</span></h3>
+            </div>
+            <p class="text__l w--50 w-100-mobile">
+                Basée à Pau, notre association D+Blokés vise à promouvoir la pratique de l’escalade en extérieur.
+                <br><br>
+                Nous consacrons notre temps à la recherche, au nettoyage, à l’ouverture et l’entretien de nouveaux sites
+                de blocs. Nous organisons aussi des sorties et événements pour partager au plus grand nombre notre
+                travail.
+                <br><br>
+                Si vous grimpez dans l’ouest des Pyrénées et voulez être au coeur de l’action, vous devriez vous y
+                retrouver parmis nous.
+            </p>
+        </div>
+    </section>
+    <section class="container__large secondary-light--bg flex col align--center">
+        <div class="container flex col align--center justify--center gap--16 border--bottom border-stroke-dark">
+            <div class="flex col gap--8 w--60 text-center w-100-mobile">
+                <h3>Découvrir les actions de notre <span class="italic">association</span></h3>
+                <p class="text__l">
+                    Escalade et développement de sites dans les Pyrénées. Escalade et développement de sites dans les
+                    Pyrénées.
+                </p>
+            </div>
+            <div class="flex row gap--11 col-mobile">
+                <card class="secondary-orange--bg flex col align--start justify--space-between">
+                    <div class="flex col gap--4">
+                        <div class="card__icon">
+                            <img src="{{ asset('images/hand.svg') }}" alt="">
+                        </div>
+                        <p class="text__l">
+                            Je souhaite soutenir l’association
+                        </p>
+                    </div>
+                    <a href="#" class="text__m flex row align--center justify--space-between w--100">
+                        Adhérer à D-Blokés
+                        <div class="card__arrow">
+                            <svg class="icon--secondary-orange" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.7076 8.70711C14.0981 8.31658 14.0981 7.68342 13.7076 7.29289L7.34363 0.928932C6.95311 0.538408 6.31994 0.538408 5.92942 0.928932C5.5389 1.31946 5.5389 1.95262 5.92942 2.34315L11.5863 8L5.92942 13.6569C5.5389 14.0474 5.5389 14.6805 5.92942 15.0711C6.31994 15.4616 6.95311 15.4616 7.34363 15.0711L13.7076 8.70711ZM0.000488283 9L13.0005 9L13.0005 7L0.000488279 7L0.000488283 9Z"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </card>
+                <card class="secondary-green--bg flex col align--start justify--space-between">
+                    <div class="flex col gap--4">
+                        <div class="card__icon">
+                            <img src="{{ asset('images/map.svg') }}" alt="">
+                        </div>
+                        <p class="text__l">
+                            Je souhaite découvrir le topo
+                        </p>
+                    </div>
+                    <a href="#" class="text__m flex row align--center justify--space-between w--100">
+                        Découvrir le topo
+                        <div class="card__arrow">
+                            <svg class="icon--secondary-green" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.7076 8.70711C14.0981 8.31658 14.0981 7.68342 13.7076 7.29289L7.34363 0.928932C6.95311 0.538408 6.31994 0.538408 5.92942 0.928932C5.5389 1.31946 5.5389 1.95262 5.92942 2.34315L11.5863 8L5.92942 13.6569C5.5389 14.0474 5.5389 14.6805 5.92942 15.0711C6.31994 15.4616 6.95311 15.4616 7.34363 15.0711L13.7076 8.70711ZM0.000488283 9L13.0005 9L13.0005 7L0.000488279 7L0.000488283 9Z"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </card>
+                <card class="secondary-beige--bg flex col align--start justify--space-between">
+                    <div class="flex col gap--4">
+                        <div class="card__icon">
+                            <img src="{{ asset('images/pin.svg') }}" alt="">
+                        </div>
+                        <p class="text__l">
+                            Je souhaite pratiquer l'escalade en extérieur
+                        </p>
+                    </div>
+                    <a href="#" class="text__m flex row align--center justify--space-between w--100">
+                        Participer aux sorties
+                        <div class="card__arrow">
+                            <svg class="icon--secondary-beige" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.7076 8.70711C14.0981 8.31658 14.0981 7.68342 13.7076 7.29289L7.34363 0.928932C6.95311 0.538408 6.31994 0.538408 5.92942 0.928932C5.5389 1.31946 5.5389 1.95262 5.92942 2.34315L11.5863 8L5.92942 13.6569C5.5389 14.0474 5.5389 14.6805 5.92942 15.0711C6.31994 15.4616 6.95311 15.4616 7.34363 15.0711L13.7076 8.70711ZM0.000488283 9L13.0005 9L13.0005 7L0.000488279 7L0.000488283 9Z"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </card>
+                <card class="secondary-kaki--bg flex col align--start justify--space-between">
+                    <div class="flex col gap--4">
+                        <div class="card__icon">
+                            <img src="{{ asset('images/mountain.svg') }}" alt="">
+                        </div>
+                        <p class="text__l">
+                            Je souhaite participer aux évènements
+                        </p>
+                    </div>
+                    <a href="#" class="text__m flex row align--center justify--space-between w--100">
+                        Le Granitkipik
+                        <div class="card__arrow">
+                            <svg class="icon--secondary-kaki" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.7076 8.70711C14.0981 8.31658 14.0981 7.68342 13.7076 7.29289L7.34363 0.928932C6.95311 0.538408 6.31994 0.538408 5.92942 0.928932C5.5389 1.31946 5.5389 1.95262 5.92942 2.34315L11.5863 8L5.92942 13.6569C5.5389 14.0474 5.5389 14.6805 5.92942 15.0711C6.31994 15.4616 6.95311 15.4616 7.34363 15.0711L13.7076 8.70711ZM0.000488283 9L13.0005 9L13.0005 7L0.000488279 7L0.000488283 9Z"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </card>
+            </div>
+        </div>
+        <div class="container flex row gap--20 justify--space-between col-mobile">
+            <div class="w--50 w-100-mobile">
+                <img class="img__home" src="{{ asset('images/home-background.webp') }}" alt="">
+            </div>
+            <div class="w--50 flex col align--start gap--8 w-100-mobile">
+                <h3>
+                    Un évènement dédié à l’escalade de bloc le <span class="italic">Granitkipik</span>
+                </h3>
+                <p class="text__l">
+                    Au cœur de la forêt magique et luxuriante de Miégebat, au frais entre le gave d’Ossau et les chaos
+                    de roches des Eaux-Chaudes, à 15 min de Laruns, on vous promet 2 jours de convivialité, de détente
+                    et de grimpe plaisir sur un granit parfait. (mais Kipik un peu quand même)
+                </p>
+                <a href="#" class="text__l secondary-orange flex row gap--2 align--center">
+                    Découvrir le programme
+                    <svg class="icon icon--secondary-orange" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.7076 8.70711C14.0981 8.31658 14.0981 7.68342 13.7076 7.29289L7.34363 0.928932C6.95311 0.538408 6.31994 0.538408 5.92942 0.928932C5.5389 1.31946 5.5389 1.95262 5.92942 2.34315L11.5863 8L5.92942 13.6569C5.5389 14.0474 5.5389 14.6805 5.92942 15.0711C6.31994 15.4616 6.95311 15.4616 7.34363 15.0711L13.7076 8.70711ZM0.000488283 9L13.0005 9L13.0005 7L0.000488279 7L0.000488283 9Z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="container__large secondary-dark--bg primary-light">
+        <div class="container flex row align--center justify--center gap--8 col-mobile">
+            <div class="w--50 w-100-mobile">
+                <h3 class="w--70">Un topo des plus beaux blocs <span class="italic">en Vallée d’Ossau</span></h3>
+            </div>
+            <div class="flex col gap--11 w--50 w-100-mobile">
+                <p class="text__l">
+                    Un ouvrage qui répertorie près de 900 lignes de blocs qui ont été ouvertes en vallée d’Ossau.
+                    Réparties sur 2 secteurs - Miégebat et Pont de Camps - entre forêt et milieu alpin, les ouvertures
+                    vont du niveau 3a au niveau 8b.
+                </p>
+                <a href="#" class="btn btn__light btn__lg">Commander le topo</a>
+            </div>
+
+        </div>
+    </section>
+    <section class="container__large secondary-light--bg flex col align--center">
+        <div class="container flex col align--center justify--center gap--16">
+            <div class="flex col gap--8 w--60 text-center w-100-mobile">
+                <h3>Découvrir les actualités de
+                    <span class="italic">D+Blokés</span></h3>
+                <p class="text__l">
+                    Suivre toute l’actualité de l’association sur notre page Instagram
+                </p>
+            </div>
+            <div class="flex row gap--11 col-mobile ">
+                <card class="secondary-orange--bg flex col align--start justify--space-between" style="background-image: url({{ asset('images/home-background.webp') }}); background-position: center; background-size: cover;">
+
+                </card>
+                <card class="secondary-green--bg flex col align--start justify--space-between" style="background-image: url({{ asset('images/home-background.webp') }}); background-position: center; background-size: cover;">
+
+                </card>
+                <card class="secondary-beige--bg flex col align--start justify--space-between" style="background-image: url({{ asset('images/home-background.webp') }}); background-position: center; background-size: cover;">
+
+                </card>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

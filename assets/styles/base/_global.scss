@@ -1,6 +1,6 @@
 :root {
     --main-padding-h: 4.38rem;
-    --main-padding-v: 6.25rem;
+    --main-padding-v: 10rem;
     --nav-padding-v: 2rem;
     --dropdown-padding-v: 7.81em;
     --max-width: 1440px;
@@ -21,7 +21,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    font-family: "Inter", sans-serif;
+    font-family: "Overused Grotesk", sans-serif;
 }
 
 body {
@@ -30,14 +30,13 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: var(--primary-light);
+    background-color: var(--primary-dark);
     color: var(--primary-dark);
 }
 
 main {
     position: relative;
     z-index: 3;
-    background-color: var(--primary-light);
     width: 100%;
     height: auto;
     min-height: 100vh;
@@ -111,7 +110,7 @@ p > a {
         display: none;
     }
     .display-mobile {
-        display: block;
+        display: flex;
     }
 
     :root {

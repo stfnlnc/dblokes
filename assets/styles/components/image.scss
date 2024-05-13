@@ -1,0 +1,9 @@
+.img {
+    &__home {
+        aspect-ratio: 4/3;
+        width: 100%;
+        border-radius: 1.875rem;
+        object-fit: cover;
+        object-position: center;
+    }
+}

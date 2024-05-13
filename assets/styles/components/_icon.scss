@@ -1,21 +1,44 @@
 .icon {
-    height: 0.875rem;
-    fill: var(--primary-light);
-    transition: fill .3s;
+    width: 1.2rem;
+    height: 1rem;
     &--primary-dark {
         fill: var(--primary-dark);
     }
     &--primary-light {
         fill: var(--primary-light);
     }
-    &--primary-grey {
-        fill: var(--primary-grey);
+    &--secondary-light {
+        fill: var(--secondary-light);
+    }
+    &--secondary-dark {
+        fill: var(--secondary-dark);
+    }
+    &--secondary-green {
+        fill: var(--secondary-green);
+    }
+    &--secondary-orange {
+        fill: var(--secondary-orange);
+    }
+    &--secondary-kaki {
+        fill: var(--secondary-kaki);
+    }
+    &--secondary-beige {
+        fill: var(--secondary-beige);
+    }
+    &--stroke-light {
+        fill: var(--stroke-light);
     }
     &--stroke-dark {
         fill: var(--stroke-dark);
     }
-    &--stroke-light {
-        fill: var(--stroke-light);
+    &--info {
+        fill: var(--info);
+    }
+    &--success {
+        fill: var(--success);
+    }
+    &--danger {
+        fill: var(--danger);
     }
 }
 

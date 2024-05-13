@@ -3,8 +3,13 @@
     max-width: var(--max-width);
     padding: var(--main-padding-v) var(--main-padding-h);
     &__top {
-        height: calc(100vh - 115px);
+        height: 100vh;
         min-height: 600px;
+    }
+    &__nav {
+        width: 100%;
+        max-width: var(--max-width);
+        padding: 0 var(--main-padding-h);
     }
     &__large {
         width: 100%;
@@ -20,9 +25,6 @@
         &::-webkit-scrollbar {
             display: none;
         }
-    }
-    &__project {
-        padding: 0.63rem;
     }
 }
 

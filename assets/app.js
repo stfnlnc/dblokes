@@ -1,10 +1,14 @@
-import './bootstrap.js';
-/*
- * Welcome to your app's main JavaScript file!
- *
- * This file will be included onto the page via the importmap() Twig function,
- * which should already be in your base.html.twig.
- */
 import './styles/app.css';
 
-console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
+// Menu mobile
+const iconHeader = document.querySelector('.header__icon')
+const menuHeader = document.querySelector('.header__menu')
+const closeHeader = document.querySelector('.header__close')
+
+iconHeader.addEventListener('click', () => {
+    menuHeader.style.transform = 'translate(0,0)'
+})
+
+closeHeader.addEventListener('click', () => {
+    menuHeader.style.transform = 'translate(-120%,0)'
+})

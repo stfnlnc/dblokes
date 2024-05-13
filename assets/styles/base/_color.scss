@@ -1,11 +1,12 @@
 :root {
-    --primary-dark: #191919;
-    --primary-light: #FFFFFF;
-    --primary-grey: #808182;
-    --secondary-green: #D3E0D3;
-    --secondary-blue: #CDDFE6;
-    --secondary-violet: #DAD6EA;
-    --secondary-beige: #EAE0D6;
+    --primary-dark: #333;
+    --primary-light: #FFF;
+    --secondary-light: #FCF9F0;
+    --secondary-dark: #062B19;
+    --secondary-green: #E2F39C;
+    --secondary-orange: #FF5F10;
+    --secondary-kaki: #9B941D;
+    --secondary-beige: #EADDCC;
     --stroke-light: #E0E0E0;
     --stroke-dark: #3F3E3E;
     --info: #e0d94d;
@@ -18,8 +19,6 @@
 
     &--bg {
         background-color: var(--primary-dark);
-        position: relative;
-        z-index: 1;
     }
 }
 
@@ -28,16 +27,22 @@
 
     &--bg {
         background-color: var(--primary-light);
-        position: relative;
-        z-index: 1;
     }
 }
 
-.primary-grey {
-    color: var(--primary-grey);
+.secondary-light {
+    color: var(--secondary-light);
 
     &--bg {
-        background-color: var(--primary-grey);
+        background-color: var(--secondary-light);
+    }
+}
+
+.secondary-dark {
+    color: var(--secondary-dark);
+
+    &--bg {
+        background-color: var(--secondary-dark);
     }
 }
 
@@ -45,26 +50,20 @@
     color: var(--secondary-green);
     &--bg {
         background-color: var(--secondary-green);
-        position: relative;
-        z-index: 1;
     }
 }
 
-.secondary-blue {
-    color: var(--secondary-blue);
+.secondary-orange {
+    color: var(--secondary-orange);
     &--bg {
-        background-color: var(--secondary-blue);
-        position: relative;
-        z-index: 1;
+        background-color: var(--secondary-orange);
     }
 }
 
-.secondary-violet {
-    color: var(--secondary-violet);
+.secondary-kaki {
+    color: var(--secondary-kaki);
     &--bg {
-        background-color: var(--secondary-violet);
-        position: relative;
-        z-index: 1;
+        background-color: var(--secondary-kaki);
     }
 }
 
@@ -72,8 +71,6 @@
     color: var(--secondary-beige);
     &--bg {
         background-color: var(--secondary-beige);
-        position: relative;
-        z-index: 1;
     }
 }
 
