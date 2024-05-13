@@ -632,8 +632,12 @@ blockquote > p {
   --h5: 1.5rem;
   --h6: 1rem;
   --font-heading: "Overused Grotesk", sans-serif;
-  --weight-heading: 400;
+  --weight-heading: 500;
   --letter-spacing-heading: 0;
+}
+
+.blaak {
+  font-family: "Blaak", serif;
 }
 
 h1, .h1 {
@@ -716,9 +720,8 @@ h1, .h1 {
   font-weight: 300 900;
 }
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter-vf.ttf") format("truetype");
-  font-weight: 300 900;
+  font-family: "Blaak";
+  src: url("../fonts/BlaakLightItalic_PERSONAL.ttf") format("truetype");
 }
 .inter {
   font-family: "Inter", sans-serif;
@@ -841,7 +844,7 @@ h1, .h1 {
 }
 
 header {
-  background: linear-gradient(black, transparent);
+  backdrop-filter: brightness(0.65);
 }
 
 .header__logo {

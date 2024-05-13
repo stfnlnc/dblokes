@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact - {{ parent() }}{% endblock %}
+{% block body %}
+    <section class="container__large"
+             style="background-image: linear-gradient(rgba(0,0,0,0.6) 50%, rgba(0,0,0,0)), url({{ asset('images/contact.webp') }}); background-position: center; background-size: cover;">
+        <div class="container container__top flex col align--center justify--center gap--4 primary-light">
+            <h1 class="blaak">Besoin de <br>renseignements ?</h1>
+        </div>
+    </section>
+{% endblock %}
