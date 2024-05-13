@@ -858,7 +858,9 @@ header {
   top: 0.8rem;
   left: 0.8rem;
   width: calc(100% - 1.6rem);
-  height: calc(100vh - 1.6rem);
+  height: 80vh;
+  min-height: 600px;
+  max-width: 400px;
   overflow: scroll;
   transform: translate(-120%, 0);
   transition: transform var(--dropdown-duration) var(--dropdown-cubic);
