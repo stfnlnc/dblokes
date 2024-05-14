@@ -9,6 +9,10 @@
   object-fit: cover;
   object-position: center;
 }
+.img__topo {
+  width: 100%;
+  border-radius: 1.875rem;
+}
 
 .menu__item {
   color: var(--primary-dark);
@@ -163,8 +167,8 @@
   font-size: 1rem;
   line-height: 150%;
   letter-spacing: 0;
-  font-family: "Inter", sans-serif;
-  border-radius: 0.375rem;
+  font-family: "Overused Grotesk", sans-serif;
+  border-radius: 1.875rem;
 }
 
 input[type=file] {
@@ -273,7 +277,7 @@ textarea {
 }
 
 .form-input:focus, .form-textarea:focus, .form-check input:focus + label::before, .form-toggle input:focus + label::before {
-  box-shadow: 0 0 0.1em 0.02em var(--primary-dark);
+  box-shadow: 0 0 0.1em 0.02em var(--secondary-orange);
   outline: none;
 }
 
@@ -284,6 +288,7 @@ textarea {
   font-size: 1.1875rem;
   line-height: 150%;
   letter-spacing: -3%;
+  font-family: "Overused Grotesk", sans-serif;
 }
 
 .errors {
@@ -844,7 +849,8 @@ h1, .h1 {
 }
 
 header {
-  backdrop-filter: brightness(0.65);
+  background-color: transparent;
+  transition: background-color var(--dropdown-duration) var(--dropdown-cubic);
 }
 
 .header__logo {

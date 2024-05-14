@@ -38,6 +38,7 @@
             </div>
             <div class="container__nav primary-light flex row align--center justify--space-between pt--4 pb--4">
                 <div class="flex row gap--8 hide-mobile">
+                    <a href="{{ path('app_index') }}">Home</a>
                     <a href="{{ path('app_asso') }}">L'association</a>
                     <a href="{{ path('app_topo') }}">Le topo</a>
                     <a href="{{ path('app_festival') }}">Le festival</a>
@@ -55,6 +56,7 @@
                             X Fermer
                         </div>
                         <div class="flex col gap--2 text__l">
+                            <a href="{{ path('app_index') }}">Home</a>
                             <a href="{{ path('app_asso') }}">L'association</a>
                             <a href="{{ path('app_topo') }}">Le topo</a>
                             <a href="{{ path('app_festival') }}">Le festival</a>
@@ -80,11 +82,11 @@
                                 L'association
                             </p>
                             <div class="flex col gap--1">
-                                <a href="#" class="text__s primary-light">Qui sommes-nous ?</a>
-                                <a href="#" class="text__s primary-light">Les membres</a>
-                                <a href="#" class="text__s primary-light">Nos projets</a>
-                                <a href="#" class="text__s primary-light">Notre actu</a>
-                                <a href="#" class="text__s primary-light">Nous rejoindre</a>
+                                <a href="{{ path('app_asso') }}#qui-sommes-nous" class="text__s primary-light">Qui sommes-nous ?</a>
+                                <a href="{{ path('app_asso') }}#les-membres" class="text__s primary-light">Les membres</a>
+                                <a href="{{ path('app_asso') }}#nos-projets" class="text__s primary-light">Nos projets</a>
+                                <a href="{{ path('app_asso') }}#notre-actu" class="text__s primary-light">Notre actu</a>
+                                <a href="{{ path('app_asso') }}#nous-rejoindre" class="text__s primary-light">Nous rejoindre</a>
                             </div>
                         </div>
                         <div class="flex col gap--4">
@@ -92,10 +94,10 @@
                                 Notre topo
                             </p>
                             <div class="flex col gap--1">
-                                <a href="#" class="text__s primary-light">Découvrir le topo</a>
-                                <a href="#" class="text__s primary-light">Points de vente</a>
-                                <a href="#" class="text__s primary-light">Commander le topo</a>
-                                <a href="#" class="text__s primary-light">Corrections du topo</a>
+                                <a href="{{ path('app_topo') }}#decouvrir-le-topo" class="text__s primary-light">Découvrir le topo</a>
+                                <a href="{{ path('app_topo') }}#points-de-vente" class="text__s primary-light">Points de vente</a>
+                                <a href="{{ path('app_topo') }}#commander-le-topo" class="text__s primary-light">Commander le topo</a>
+                                <a href="{{ path('app_topo') }}#corrections" class="text__s primary-light">Corrections du topo</a>
                             </div>
                         </div>
                         <div class="flex col gap--4">
@@ -103,11 +105,11 @@
                                 Notre festival
                             </p>
                             <div class="flex col gap--1">
-                                <a href="#" class="text__s primary-light">Granitkipik édition 2024</a>
-                                <a href="#" class="text__s primary-light">Programme</a>
-                                <a href="#" class="text__s primary-light">Contest d'escalade</a>
-                                <a href="#" class="text__s primary-light">Infos pratiques</a>
-                                <a href="#" class="text__s primary-light">Partenaires</a>
+                                <a href="{{ path('app_festival') }}#granitkipik" class="text__s primary-light">Granitkipik édition 2024</a>
+                                <a href="{{ path('app_festival') }}#programme" class="text__s primary-light">Programme</a>
+                                <a href="{{ path('app_festival') }}#contest-d-escalade" class="text__s primary-light">Contest d'escalade</a>
+                                <a href="{{ path('app_festival') }}#infos-pratiques" class="text__s primary-light">Infos pratiques</a>
+                                <a href="{{ path('app_festival') }}#partenaires" class="text__s primary-light">Partenaires</a>
                             </div>
                         </div>
                         <div class="flex col gap--4">
@@ -115,8 +117,8 @@
                                 Le shop
                             </p>
                             <div class="flex col gap--1">
-                                <a href="#" class="text__s primary-light">Nouveautés</a>
-                                <a href="#" class="text__s primary-light">Boutique en ligne</a>
+                                <a href="{{ path('app_shop') }}#nouveautés" class="text__s primary-light">Nouveautés</a>
+                                <a href="{{ path('app_shop') }}#boutique" class="text__s primary-light">Boutique en ligne</a>
                             </div>
                         </div>
                         <div class="flex col gap--4">
@@ -133,9 +135,9 @@
                                 Contact
                             </p>
                             <div class="flex col gap--1">
-                                <a href="#" class="text__s primary-light">Formulaire de contact</a>
-                                <a href="#" class="text__s primary-light">Politique de confidentialité</a>
-                                <a href="#" class="text__s primary-light">Mentions légales</a>
+                                <a href="{{ path('app_contact') }}#form" class="text__s primary-light">Formulaire de contact</a>
+                                <a href="{{ path('app_contact') }}#privacy-policy" class="text__s primary-light">Politique de confidentialité</a>
+                                <a href="{{ path('app_contact') }}#legal-notice" class="text__s primary-light">Mentions légales</a>
                             </div>
                         </div>
                     </div>
@@ -147,7 +149,7 @@
                     </div>
                     <div class="w--100 flex row align--center justify--space-between gap--4 primary-light col-mobile align-mobile--end">
                         <a class="" href="#">2024 - Site réalisé par Studio Khi</a>
-                        <a class="" href="#">Instagram</a>
+                        <a class="" href="https://www.instagram.com/dblokes/">Instagram</a>
                     </div>
                 </div>
             </div>

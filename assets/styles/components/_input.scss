@@ -6,8 +6,8 @@
     font-size: 1rem;
     line-height: 150%;
     letter-spacing: 0;
-    font-family: "Inter", sans-serif;
-    border-radius: 0.375rem;
+    font-family: "Overused Grotesk", sans-serif;
+    border-radius: 1.875rem;
 }
 
 input[type="file"] {
@@ -116,7 +116,7 @@ textarea {
 }
 
 .form-input:focus, .form-textarea:focus, .form-check input:focus + label::before, .form-toggle input:focus + label::before {
-    box-shadow: 0 0 0.1em 0.02em var(--primary-dark);
+    box-shadow: 0 0 0.1em 0.02em var(--secondary-orange);
     outline: none;
 }
 
@@ -127,6 +127,7 @@ textarea {
     font-size: 1.1875rem;
     line-height: 150%;
     letter-spacing: -3%;
+    font-family: "Overused Grotesk", sans-serif;
 }
 
 .errors {

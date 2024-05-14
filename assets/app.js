@@ -12,3 +12,14 @@ iconHeader.addEventListener('click', () => {
 closeHeader.addEventListener('click', () => {
     menuHeader.style.transform = 'translate(-120%,0)'
 })
+
+// Header background scroll
+const header = document.querySelector('header')
+
+document.addEventListener('scroll', () => {
+    if(window.scrollY > 200) {
+        header.style.backgroundColor = 'var(--secondary-dark)'
+    } else {
+        header.style.backgroundColor = 'transparent'
+    }
+})

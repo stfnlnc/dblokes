@@ -1,11 +1,156 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}L'association - {{ parent() }}{% endblock %}
+{% block title %}Le topo - {{ parent() }}{% endblock %}
 {% block body %}
     <section class="container__large"
              style="background-image: linear-gradient(rgba(0,0,0,0.6) 50%, rgba(0,0,0,0)), url({{ asset('images/topo.webp') }}); background-position: center; background-size: cover;">
         <div class="container container__top flex col align--center justify--center gap--4 primary-light">
             <h1 class="blaak">Le topo</h1>
+        </div>
+    </section>
+    <section id="decouvrir-le-topo" class="container__large secondary-light--bg flex col align--center">
+        <div class="container flex row gap--20 justify--space-between col-mobile gap-large-mobile border--bottom border-stroke-dark">
+            <div class="w--50 w-100-mobile">
+                <img class="img__topo" src="{{ asset('images/topo.jpg') }}" alt="">
+            </div>
+            <div class="w--50 flex col align--start gap--8 w-100-mobile">
+                <h3>
+                    <span class="blaak">BLOCS</span> <br>en vallée d'Ossau
+                </h3>
+                <p class="text__l">
+                    Cet ouvrage a été réalisé après plusieurs années de recherche. Les informations ont été compilées
+                    auprès des grimpeur•euse•s français•e•s et espagnol•e•s, fréquentant le site des années 80 à
+                    aujourd’hui, et souhaitant communiquer sur leurs ouvertures.
+                    <br>
+                    L’objectif est de promouvoir l’escalade dans la vallée et d’encourager l’économie locale.
+                    <br>
+                    Ce topo est réalisé en concertation avec l’ONF, le Parc National des Pyrénées, la SHEM et la Mairie
+                    de Laruns, pour la préservation de l’environnement et le respect des lieux.
+                    <br>
+                    Merci à eux pour leur soutien.
+                    <br><br>
+                    Cet ouvrage a pour vocation de guider les grimpeurs sur les deux sites de blocs actuellement
+                    répertoriés en vallée d’Ossau. L’escalade présentée se pratique en pleine nature, le rocher est un
+                    élément en perpétuelle évolution.
+                    <br>
+                    Bien que certains aménagements ou modifications aient eu lieu pour en faciliter la pratique, ce
+                    sport présente des risques dont les conséquences ne pourront engager la responsabilité de l’auteur.
+                    Soyez prudents et respectueux des lieux.
+                </p>
+            </div>
+        </div>
+        <div id="points-de-vente" class="container flex col align--center justify--center gap--16">
+            <div class="flex col gap--8 w--60 text-center w-100-mobile">
+                <h3>Les points de <span class="blaak">vente</span></h3>
+                <p class="text__l">
+                    Trouver le topo en boutique.
+                </p>
+            </div>
+            <div class="grid grid--4 grid--1-mobile grid-gap--8 border--bottom border-stroke-dark pb--20">
+                <card class="secondary-dark--bg primary-light flex col align--start justify--space-between">
+                    <div class="flex col gap--3">
+                        <h5>
+                            <span class="blaak">Pyrénées-Atlantiques</span> (64)
+                        </h5>
+                        <p class="text__s">
+                            <strong>Chalet l’Hermine</strong> (Pont de Camps) <br>
+                            <strong>Loca Ski</strong> (Laruns) <br>
+                            <strong>Office du Tourisme</strong> (Laruns) <br>
+                            <strong>La Curieuse Librairie Troquet</strong> (Arudy) <br>
+                            <strong>Les Boutiques d’Ossau</strong> (Bielle) <br>
+                            <strong>Editions du Pin à Crochets</strong> (Pau) <br>
+                            <strong>Bêta-Bloc</strong> (Pau) <br>
+                            <strong>Alpy-Rando</strong> (Pau) <br>
+                            <strong>The Roof</strong> (Bayonne) <br>
+                            <strong>E.Leclerc Sport & Loisirs</strong> (Oloron) <br>
+                            <strong>L’Escapade</strong> (Oloron)
+                        </p>
+                    </div>
+                </card>
+                <card class="secondary-dark--bg primary-light flex col align--start justify--space-between">
+                    <div class="flex col gap--3">
+                        <h5>
+                            <span class="blaak">Hautes-Pyrénées</span> (65)
+                        </h5>
+                        <p class="text__s">
+                            <strong>Le Kairn Bistro-Librairie</strong> (Arras-en-Lavedan) <br>
+                            <strong>Auprès de Pyrène</strong> (Bagnères-de-Bigorre) <br>
+                            <strong>L’Usine Escalade</strong> (Tarbes) <br>
+                            <strong>Roc & Trail</strong> (Lourdes) <br>
+                            <strong>Le vagabond immobile</strong> (Arreau)
+                        </p>
+                    </div>
+                </card>
+                <card class="secondary-dark--bg primary-light flex col align--start justify--space-between">
+                    <div class="flex col gap--3">
+                        <h5>
+                            <span class="blaak">Haute-Garonne</span> (31)
+                        </h5>
+                        <p class="text__s">
+                            <strong>La Ô</strong> (Portet sur Garonne) <br>
+                            <strong>Au Vieux Campeur</strong> (Labège) <br>
+                            <strong>Block Out</strong> (Toulouse)
+                        </p>
+                    </div>
+                </card>
+                <card class="secondary-dark--bg primary-light flex col align--start justify--space-between">
+                    <div class="flex col gap--3">
+                        <h5>
+                            <span class="blaak">Gironde</span> (33)
+                        </h5>
+                        <p class="text__s">
+                            <strong>Au Vieux Campeur</strong> (Bordeaux)
+                        </p>
+                    </div>
+                </card>
+                <card class="secondary-dark--bg primary-light flex col align--start justify--space-between">
+                    <div class="flex col gap--3">
+                        <h5>
+                            <span class="blaak">Landes</span> (40)
+                        </h5>
+                        <p class="text__s">
+                            <strong>Blocoast</strong> (Hossegor) <br>
+                            <strong>Padelnbloc</strong> (Saint-Avit)
+                        </p>
+                    </div>
+                </card>
+                <card class="secondary-dark--bg primary-light flex col align--start justify--space-between">
+                    <div class="flex col gap--3">
+                        <h5>
+                            <span class="blaak">Espagne</span>
+                        </h5>
+                        <p class="text__s">
+                            <span class="text__s"><strong>Barrabes</strong></span>
+                            (Jaca,
+                            Benasque,
+                            Barcelona,
+                            Madrid,
+                            Zaragoza,
+                            Huesca)
+                        </p>
+                    </div>
+                </card>
+            </div>
+            <div id="commander-le-topo" class="flex col align--center justify--center gap--8 w--60 text-center w-100-mobile">
+                <h3>Commander <span class="blaak">le topo</span></h3>
+                <p class="text__l">
+                    Trouver le topo en ligne.
+                </p>
+                <div class="flex row col-mobile gap--4">
+                    <a class="btn btn__lg btn__dark" href="https://www.auvieuxcampeur.fr/blocs-en-vallee-d-ossau.html">Au vieux camper</a>
+                    <a class="btn btn__lg btn__dark" href="https://klettern-shop.de/kletterfuehrer/1709-blocs-en-vallee-d-ossau-9791069998391">Klettern
+                        Shop</a>
+                    <a class="btn btn__lg btn__dark" href="https://tmms-shop.de/kletterfuehrer/1709-blocs-en-vallee-d-ossau-9791069998391.html">TMMS
+                        Shop</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="corrections" class="container__large secondary-beige--bg flex col align--center">
+        <div class="container flex col align--center justify--center gap--8 text-center">
+            <h3>Les corrections <br>
+                <span class="blaak">du topo</span></h3>
+            <a href="#" class="btn btn__lg">Télécharger</a>
         </div>
     </section>
 {% endblock %}

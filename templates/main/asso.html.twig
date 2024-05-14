@@ -1,11 +1,94 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}L'association - {{ parent() }}{% endblock %}
+
 {% block body %}
     <section class="container__large"
              style="background-image: linear-gradient(rgba(0,0,0,0.6) 50%, rgba(0,0,0,0)), url({{ asset('images/association.webp') }}); background-position: center; background-size: cover;">
         <div class="container container__top flex col align--center justify--center gap--4 primary-light">
             <h1 class="blaak">L'association</h1>
+        </div>
+    </section>
+    <section id="qui-sommes-nous" class="container__large secondary-dark--bg primary-light">
+        <div class="container flex row align--center justify--center gap--8 col-mobile">
+            <div class="w--50 w-100-mobile">
+                <h3 class="w--70"><span class="blaak">Escalade</span> et développement de sites dans les <span class="blaak">Pyrénées</span></h3>
+            </div>
+            <p class="text__l w--50 w-100-mobile">
+                Basée à Pau, notre association D+Blokés vise à promouvoir la pratique de l’escalade en extérieur.
+                <br><br>
+                Nous consacrons notre temps à la recherche, au nettoyage, à l’ouverture et l’entretien de nouveaux sites
+                de blocs. Nous organisons aussi des sorties et événements pour partager au plus grand nombre notre
+                travail.
+                <br><br>
+                Si vous grimpez dans l’ouest des Pyrénées et voulez être au coeur de l’action, vous devriez vous y
+                retrouver parmis nous.
+            </p>
+        </div>
+    </section>
+    <section id="les-membres" class="container__large secondary-light--bg flex col align--center">
+        <div class="container flex col align--center justify--center gap--16">
+            <div class="flex col gap--4 w--60 text-center w-100-mobile">
+                <h3>Les membres de <span class="blaak">D+Blokés</span></h3>
+                <p class="text__l">
+                    Découvrez notre équipe de passionné.e.s
+                </p>
+            </div>
+            <div class="flex row gap--11 col-mobile">
+                <div class="flex col gap--2">
+                    <card class="secondary-orange--bg flex col align--start justify--space-between" style="background-image: url({{ asset('images/home-background.webp') }}); background-position: center; background-size: cover;"></card>
+                    <p class="text__m">Nom Prénom <br> Poste</p>
+                </div>
+                <div class="flex col gap--2">
+                    <card class="secondary-orange--bg flex col align--start justify--space-between" style="background-image: url({{ asset('images/home-background.webp') }}); background-position: center; background-size: cover;"></card>
+                    <p class="text__m">Nom Prénom <br> Poste</p>
+                </div>
+                <div class="flex col gap--2">
+                    <card class="secondary-orange--bg flex col align--start justify--space-between" style="background-image: url({{ asset('images/home-background.webp') }}); background-position: center; background-size: cover;"></card>
+                    <p class="text__m">Nom Prénom <br> Poste</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="nos-projets" class="container__large secondary-dark--bg primary-light">
+        <div class="container flex col align--center justify--center gap--8 text-center">
+            <h3 class="w--70 w-100-mobile"><span class="blaak">Escalade</span> et développement de sites dans les <span class="blaak">Pyrénées</span></h3>
+            <p class="text__l w--70 w-100-mobile">
+                Notre association d'escalade dans les Pyrénées s'engage pleinement dans la préservation et l'expansion de l'environnement de l'escalade.
+                <br><br>
+                Nous nous consacrons à une série de projets ambitieux visant à enrichir l'expérience des grimpeurs tout en protégeant les sites naturels. Notre mission comprend la recherche de nouveaux sites de blocs, leur nettoyage méticuleux pour assurer la sécurité des pratiquants, ainsi que leur ouverture soigneuse afin d'offrir de nouvelles opportunités d'escalade.
+                <br><br>
+                De plus, nous nous engageons dans l'entretien régulier de ces sites, veillant à ce qu'ils restent accessibles et préservés pour les générations futures. Avec notre passion pour l'escalade et notre engagement envers la préservation de l'environnement, nous sommes déterminés à enrichir la communauté des grimpeurs tout en protégeant les magnifiques paysages des Pyrénées.
+            </p>
+        </div>
+    </section>
+    <section id="notre-actu" class="container__large secondary-light--bg flex col align--center">
+        <div class="container flex col align--center justify--center gap--16">
+            <div class="flex col gap--8 w--60 text-center w-100-mobile">
+                <h3>Découvrir les actualités de
+                    <span class="blaak">D+Blokés</span></h3>
+                <p class="text__l">
+                    Suivre toute l’actualité de l’association sur notre page Instagram
+                </p>
+            </div>
+            <div class="flex row gap--11 col-mobile ">
+                <card class="secondary-orange--bg flex col align--start justify--space-between" style="background-image: url({{ asset('images/home-background.webp') }}); background-position: center; background-size: cover;">
+
+                </card>
+                <card class="secondary-green--bg flex col align--start justify--space-between" style="background-image: url({{ asset('images/home-background.webp') }}); background-position: center; background-size: cover;">
+
+                </card>
+                <card class="secondary-beige--bg flex col align--start justify--space-between" style="background-image: url({{ asset('images/home-background.webp') }}); background-position: center; background-size: cover;">
+
+                </card>
+            </div>
+        </div>
+    </section>
+    <section id="nous-rejoindre" class="container__large secondary-beige--bg flex col align--center">
+        <div class="container flex col align--center justify--center gap--8 text-center">
+            <h3>Vous souhaitez <br>
+                <span class="blaak">nous rejoindre ?</span></h3>
+            <a href="#" class="btn btn__lg">Adhérer à l'asso</a>
         </div>
     </section>
 {% endblock %}
