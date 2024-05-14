@@ -468,6 +468,17 @@ card {
   font-size: 1.25rem;
   padding: 0.3rem 1.6rem;
 }
+.btn__disabled {
+  color: var(--stroke-dark);
+  background-color: var(--stroke-light);
+  border: 1px solid var(--stroke-dark);
+}
+.btn__disabled:hover {
+  color: var(--stroke-dark);
+  background-color: var(--stroke-light);
+  border: 1px solid var(--stroke-dark);
+  cursor: not-allowed;
+}
 
 .link {
   color: var(--primary-dark);
@@ -851,6 +862,7 @@ h1, .h1 {
 header {
   background-color: transparent;
   transition: background-color var(--dropdown-duration) var(--dropdown-cubic);
+  z-index: 15;
 }
 
 .header__logo {

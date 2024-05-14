@@ -19,10 +19,15 @@ closeHeader.addEventListener('click', () => {
 // Header background scroll
 const header = document.querySelector('header')
 
-document.addEventListener('scroll', () => {
+function headerBg () {
     if(window.scrollY > 200) {
         header.style.backgroundColor = 'var(--secondary-dark)'
     } else {
         header.style.backgroundColor = 'transparent'
     }
+}
+
+headerBg()
+document.addEventListener('scroll', () => {
+    headerBg()
 })

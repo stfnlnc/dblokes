@@ -1,6 +1,15 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Le festival - {{ parent() }}{% endblock %}
+{% block title %}Granitkipik - {{ parent() }}{% endblock %}
+
+{% block meta %}
+    <meta name="description" content="On vous donne bientôt des nouvelles !">
+    <meta property="og:title" content="Granitkipik - D-Blokés" />
+    <meta property="og:description" content="On vous donne bientôt des nouvelles !" />
+    <meta property="og:url" content="{{ path('app_festival') }}" />
+    {{ parent() }}
+{% endblock %}
+
 {% block body %}
     <section class="container__large"
              style="background-image: linear-gradient(rgba(0,0,0,0.6) 50%, rgba(0,0,0,0)), url({{ asset('images/festival.webp') }}); background-position: center; background-size: cover;">

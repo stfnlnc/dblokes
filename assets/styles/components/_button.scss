@@ -53,6 +53,17 @@ $duration: var(--hover-duration);
         font-size: 1.25rem;
         padding: 0.3rem 1.6rem;
     }
+    &__disabled {
+        color: var(--stroke-dark);
+        background-color: var(--stroke-light);
+        border: 1px solid var(--stroke-dark);
+        &:hover {
+            color: var(--stroke-dark);
+            background-color: var(--stroke-light);
+            border: 1px solid var(--stroke-dark);
+            cursor: not-allowed;
+        }
+    }
 }
 
 .link {

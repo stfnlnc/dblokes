@@ -1,6 +1,15 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Contact - {{ parent() }}{% endblock %}
+
+{% block meta %}
+    <meta name="description" content="Besoin d'informations ? Remplissez notre formulaire de contact">
+    <meta property="og:title" content="Contact - D-Blokés" />
+    <meta property="og:description" content="Besoin d'informations ? Remplissez notre formulaire de contact" />
+    <meta property="og:url" content="{{ path('app_contact') }}" />
+    {{ parent() }}
+{% endblock %}
+
 {% block body %}
     <section class="container__large"
              style="background-image: linear-gradient(rgba(0,0,0,0.6) 50%, rgba(0,0,0,0)), url({{ asset('images/contact.webp') }}); background-position: center; background-size: cover;">

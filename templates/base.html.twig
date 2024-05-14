@@ -33,7 +33,7 @@
         <header class="container__large flex col align--center justify--center fixed pos-t--0 pos-l--0">
             <div class="secondary-green--bg w--100 flex row align--center justify--center p--1">
                 <p class="text__s text-center">
-                    Les dernières corrections du topo sont <a href="">disponibles ici</a>
+                    Les dernières corrections du topo sont <a href="{{ path('app_topo') }}#corrections">disponibles ici</a>
                 </p>
             </div>
             <div class="container__nav primary-light flex row align--center justify--space-between pt--4 pb--4">
@@ -46,8 +46,8 @@
                     <a href="{{ path('app_contact') }}">Contact</a>
                 </div>
                 <div class="flex row align--center justify--center gap--4 hide-mobile">
-                    <a class="btn btn__light" href="#">Adhérer à l'asso</a>
-                    <a class="btn" href="#">Espace membre</a>
+                    <a target="_blank" class="btn btn__light" href="https://extranet-clubalpin.com/app/webeff/we_crv2_step01.php?IDCLUB=6401&Hchk=Yk3tb14i4jSBgTQSPYM5ni4HY4xGf1">Adhérer à l'asso</a>
+                    <a class="btn btn__disabled">Espace membre</a>
                 </div>
                 <img src="{{ asset('images/menu.svg') }}" alt="" class="header__icon display-mobile">
                 <div class="header__menu display-mobile flex col align--start justify--space-between p--8 primary-dark">
@@ -65,8 +65,8 @@
                         </div>
                     </div>
                     <div class="flex col align--start justify--center gap--2">
-                        <a class="btn btn__dark" href="#">Adhérer à l'asso</a>
-                        <a class="btn" href="#">Espace membre</a>
+                        <a target="_blank" class="btn btn__dark" href="https://extranet-clubalpin.com/app/webeff/we_crv2_step01.php?IDCLUB=6401&Hchk=Yk3tb14i4jSBgTQSPYM5ni4HY4xGf1">Adhérer à l'asso</a>
+                        <a class="btn btn__disabled">Espace membre</a>
                     </div>
                 </div>
             </div>
@@ -126,8 +126,8 @@
                                 Espace membre
                             </p>
                             <div class="flex col gap--1">
-                                <a href="#" class="text__s primary-light">Adhérer à l'asso</a>
-                                <a href="#" class="text__s primary-light">Accéder à l'espace membre</a>
+                                <a target="_blank" href="https://extranet-clubalpin.com/app/webeff/we_crv2_step01.php?IDCLUB=6401&Hchk=Yk3tb14i4jSBgTQSPYM5ni4HY4xGf1" class="text__s primary-light">Adhérer à l'asso</a>
+                                <a class="text__s stroke-dark">Accéder à l'espace membre</a>
                             </div>
                         </div>
                         <div class="flex col gap--4">
@@ -144,12 +144,15 @@
                 </div>
                 <div class="flex col gap--4 w--100">
                     <div class="flex row align--center justify--end gap--4 pb--4 border--bottom border-stroke-light col-mobile align-mobile--end">
-                        <a class="btn btn__light" href="#">Adhérer à l'asso</a>
-                        <a class="btn" href="#">Espace membre</a>
+                        <a target="_blank" class="btn btn__light" href="https://extranet-clubalpin.com/app/webeff/we_crv2_step01.php?IDCLUB=6401&Hchk=Yk3tb14i4jSBgTQSPYM5ni4HY4xGf1">Adhérer à l'asso</a>
+                        <a class="btn btn__disabled">Espace membre</a>
                     </div>
-                    <div class="w--100 flex row align--center justify--space-between gap--4 primary-light col-mobile align-mobile--end">
-                        <a class="" href="#">2024 - Site réalisé par Studio Khi</a>
-                        <a class="" href="https://www.instagram.com/dblokes/">Instagram</a>
+                    <div class="w--100 flex row align--center justify--space-between gap--2 primary-light col-mobile align-mobile--end">
+                        <a target="_blank" class="" href="https://studiokhi.com">2024 - Site réalisé par Studio Khi</a>
+                        <div class="flex row col-mobile gap--2">
+                            <a target="_blank" class="" href="https://www.instagram.com/dblokes/">Instagram</a>
+                            <a target="_blank" class="" href="https://www.facebook.com/AssoDBlokes">Facebook</a>
+                        </div>
                     </div>
                 </div>
             </div>

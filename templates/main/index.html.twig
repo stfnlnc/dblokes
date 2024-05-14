@@ -2,13 +2,25 @@
 
 {% block title %}{{ parent() }}{% endblock %}
 
+{% block meta %}
+    <meta name="description" content="Nous consacrons notre temps à la recherche, au nettoyage, à l’ouverture et l’entretien de nouveaux sites
+                de blocs. Nous organisons aussi des sorties et événements pour partager au plus grand nombre notre
+                travail.">
+    <meta property="og:title" content="D-Blokés" />
+    <meta property="og:description" content="Nous consacrons notre temps à la recherche, au nettoyage, à l’ouverture et l’entretien de nouveaux sites
+                de blocs. Nous organisons aussi des sorties et événements pour partager au plus grand nombre notre
+                travail." />
+    <meta property="og:url" content="{{ path('app_index') }}" />
+    {{ parent() }}
+{% endblock %}
+
 {% block body %}
 
     <section class="container__large"
              style="background-image: linear-gradient(rgba(0,0,0,0.6) 50%, rgba(0,0,0,0)), url({{ asset('images/home-background.webp') }}); background-position: center; background-size: cover;">
         <div class="container container__top flex col align--center justify--center gap--4">
             <img class="header__logo" src="{{ asset('images/logo.svg') }}" alt="Logo D-Blokés">
-            <a href="#" class="btn btn__lg">Découvrir l'asso</a>
+            <a href="{{ path('app_asso') }}" class="btn btn__lg">Découvrir l'asso</a>
         </div>
     </section>
     <section class="container__large secondary-dark--bg primary-light">
@@ -23,7 +35,7 @@
                 de blocs. Nous organisons aussi des sorties et événements pour partager au plus grand nombre notre
                 travail.
                 <br><br>
-                Si vous grimpez dans l’ouest des Pyrénées et voulez être au coeur de l’action, vous devriez vous y
+                Si vous grimpez dans l’ouest des Pyrénées et voulez être au cœur de l’action, vous devriez vous y
                 retrouver parmis nous.
             </p>
         </div>
@@ -46,7 +58,7 @@
                             Je souhaite soutenir l’association
                         </p>
                     </div>
-                    <a href="#" class="text__m flex row align--center justify--space-between w--100">
+                    <a href="{{ path('app_asso') }}" class="text__m flex row align--center justify--space-between w--100">
                         Adhérer à D-Blokés
                         <div class="card__arrow">
                             <svg class="icon--secondary-orange" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
@@ -64,7 +76,7 @@
                             Je souhaite découvrir le topo
                         </p>
                     </div>
-                    <a href="#" class="text__m flex row align--center justify--space-between w--100">
+                    <a href="{{ path('app_topo') }}" class="text__m flex row align--center justify--space-between w--100">
                         Découvrir le topo
                         <div class="card__arrow">
                             <svg class="icon--secondary-green" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
@@ -82,7 +94,7 @@
                             Je souhaite pratiquer l'escalade en extérieur
                         </p>
                     </div>
-                    <a href="#" class="text__m flex row align--center justify--space-between w--100">
+                    <a href="{{ path('app_contact') }}" class="text__m flex row align--center justify--space-between w--100">
                         Participer aux sorties
                         <div class="card__arrow">
                             <svg class="icon--secondary-beige" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
@@ -100,7 +112,7 @@
                             Je souhaite participer aux évènements
                         </p>
                     </div>
-                    <a href="#" class="text__m flex row align--center justify--space-between w--100">
+                    <a href="{{ path('app_festival') }}" class="text__m flex row align--center justify--space-between w--100">
                         Le Granitkipik
                         <div class="card__arrow">
                             <svg class="icon--secondary-kaki" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
@@ -124,7 +136,7 @@
                     de roches des Eaux-Chaudes, à 15 min de Laruns, on vous promet 2 jours de convivialité, de détente
                     et de grimpe plaisir sur un granit parfait. (mais Kipik un peu quand même)
                 </p>
-                <a href="#" class="text__l secondary-orange flex row gap--2 align--center">
+                <a href="{{ path('app_festival') }}" class="text__l secondary-orange flex row gap--2 align--center">
                     Découvrir le programme
                     <svg class="icon icon--secondary-orange" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13.7076 8.70711C14.0981 8.31658 14.0981 7.68342 13.7076 7.29289L7.34363 0.928932C6.95311 0.538408 6.31994 0.538408 5.92942 0.928932C5.5389 1.31946 5.5389 1.95262 5.92942 2.34315L11.5863 8L5.92942 13.6569C5.5389 14.0474 5.5389 14.6805 5.92942 15.0711C6.31994 15.4616 6.95311 15.4616 7.34363 15.0711L13.7076 8.70711ZM0.000488283 9L13.0005 9L13.0005 7L0.000488279 7L0.000488283 9Z"></path>
@@ -144,7 +156,7 @@
                     Réparties sur 2 secteurs - Miégebat et Pont de Camps - entre forêt et milieu alpin, les ouvertures
                     vont du niveau 3a au niveau 8b.
                 </p>
-                <a href="#" class="btn btn__light btn__lg">Commander le topo</a>
+                <a href="{{ path('app_topo') }}#commander-le-topo"" class="btn btn__light btn__lg">Commander le topo</a>
             </div>
 
         </div>
@@ -155,7 +167,7 @@
                 <h3>Découvrir les actualités de
                     <span class="blaak">D+Blokés</span></h3>
                 <p class="text__l">
-                    Suivre toute l’actualité de l’association sur notre page Instagram
+                    Suivre toute l’actualité de l’association sur <a target="_blank" class="underline" href="https://www.instagram.com/dblokes/">notre page Instagram</a>
                 </p>
             </div>
             <div class="flex row gap--11 col-mobile ">

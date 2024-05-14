@@ -2,6 +2,14 @@
 
 {% block title %}L'association - {{ parent() }}{% endblock %}
 
+{% block meta %}
+    <meta name="description" content="Basée à Pau, notre association D+Blokés vise à promouvoir la pratique de l’escalade en extérieur.">
+    <meta property="og:title" content="L'association - D-Blokés" />
+    <meta property="og:description" content="Basée à Pau, notre association D+Blokés vise à promouvoir la pratique de l’escalade en extérieur." />
+    <meta property="og:url" content="{{ path('app_asso') }}" />
+    {{ parent() }}
+{% endblock %}
+
 {% block body %}
     <section class="container__large"
              style="background-image: linear-gradient(rgba(0,0,0,0.6) 50%, rgba(0,0,0,0)), url({{ asset('images/association.webp') }}); background-position: center; background-size: cover;">
@@ -68,7 +76,7 @@
                 <h3>Découvrir les actualités de
                     <span class="blaak">D+Blokés</span></h3>
                 <p class="text__l">
-                    Suivre toute l’actualité de l’association sur notre page Instagram
+                    Suivre toute l’actualité de l’association sur <a target="_blank" class="underline" href="https://www.instagram.com/dblokes/">notre page Instagram</a>
                 </p>
             </div>
             <div class="flex row gap--11 col-mobile ">
@@ -88,7 +96,7 @@
         <div class="container flex col align--center justify--center gap--8 text-center">
             <h3>Vous souhaitez <br>
                 <span class="blaak">nous rejoindre ?</span></h3>
-            <a href="#" class="btn btn__lg">Adhérer à l'asso</a>
+            <a target="_blank" href="https://extranet-clubalpin.com/app/webeff/we_crv2_step01.php?IDCLUB=6401&Hchk=Yk3tb14i4jSBgTQSPYM5ni4HY4xGf1" class="btn btn__lg">Adhérer à l'asso</a>
         </div>
     </section>
 {% endblock %}

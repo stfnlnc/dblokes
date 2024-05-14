@@ -1,6 +1,15 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Le shop - {{ parent() }}{% endblock %}
+
+{% block meta %}
+    <meta name="description" content="À venir">
+    <meta property="og:title" content="Le shop - D-Blokés" />
+    <meta property="og:description" content="À venir" />
+    <meta property="og:url" content="{{ path('app_shop') }}" />
+    {{ parent() }}
+{% endblock %}
+
 {% block body %}
     <section class="container__large"
              style="background-image: linear-gradient(rgba(0,0,0,0.6) 50%, rgba(0,0,0,0)), url({{ asset('images/shop.webp') }}); background-position: center; background-size: cover;">

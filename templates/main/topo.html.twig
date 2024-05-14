@@ -1,6 +1,19 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Le topo - {{ parent() }}{% endblock %}
+
+{% block meta %}
+    <meta name="description" content="Cet ouvrage a été réalisé après plusieurs années de recherche. Les informations ont été compilées
+                    auprès des grimpeur•euse•s français•e•s et espagnol•e•s, fréquentant le site des années 80 à
+                    aujourd’hui, et souhaitant communiquer sur leurs ouvertures.">
+    <meta property="og:title" content="Le topo - D-Blokés" />
+    <meta property="og:description" content="Cet ouvrage a été réalisé après plusieurs années de recherche. Les informations ont été compilées
+                    auprès des grimpeur•euse•s français•e•s et espagnol•e•s, fréquentant le site des années 80 à
+                    aujourd’hui, et souhaitant communiquer sur leurs ouvertures." />
+    <meta property="og:url" content="{{ path('app_topo') }}" />
+    {{ parent() }}
+{% endblock %}
+
 {% block body %}
     <section class="container__large"
              style="background-image: linear-gradient(rgba(0,0,0,0.6) 50%, rgba(0,0,0,0)), url({{ asset('images/topo.webp') }}); background-position: center; background-size: cover;">
@@ -15,7 +28,8 @@
             </div>
             <div class="w--50 flex col align--start gap--8 w-100-mobile">
                 <h3>
-                    <span class="blaak">BLOCS</span> <br>en vallée d'Ossau
+                    Blocs
+                    <span class="blaak">en vallée d'Ossau</span>
                 </h3>
                 <p class="text__l">
                     Cet ouvrage a été réalisé après plusieurs années de recherche. Les informations ont été compilées
@@ -137,10 +151,10 @@
                     Trouver le topo en ligne.
                 </p>
                 <div class="flex row col-mobile gap--4">
-                    <a class="btn btn__lg btn__dark" href="https://www.auvieuxcampeur.fr/blocs-en-vallee-d-ossau.html">Au vieux camper</a>
-                    <a class="btn btn__lg btn__dark" href="https://klettern-shop.de/kletterfuehrer/1709-blocs-en-vallee-d-ossau-9791069998391">Klettern
+                    <a target="_blank" class="btn btn__lg btn__dark" href="https://www.auvieuxcampeur.fr/blocs-en-vallee-d-ossau.html">Au vieux camper</a>
+                    <a target="_blank" class="btn btn__lg btn__dark" href="https://klettern-shop.de/kletterfuehrer/1709-blocs-en-vallee-d-ossau-9791069998391">Klettern
                         Shop</a>
-                    <a class="btn btn__lg btn__dark" href="https://tmms-shop.de/kletterfuehrer/1709-blocs-en-vallee-d-ossau-9791069998391.html">TMMS
+                    <a target="_blank" class="btn btn__lg btn__dark" href="https://tmms-shop.de/kletterfuehrer/1709-blocs-en-vallee-d-ossau-9791069998391.html">TMMS
                         Shop</a>
                 </div>
             </div>
@@ -150,7 +164,7 @@
         <div class="container flex col align--center justify--center gap--8 text-center">
             <h3>Les corrections <br>
                 <span class="blaak">du topo</span></h3>
-            <a href="#" class="btn btn__lg">Télécharger</a>
+            <a target="_blank" href="{{ asset('images/corrections_topo_v1.pdf') }}" class="btn btn__lg">Télécharger</a>
         </div>
     </section>
 {% endblock %}

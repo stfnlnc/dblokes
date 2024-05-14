@@ -1,6 +1,7 @@
 header {
     background-color: transparent;
     transition: background-color var(--dropdown-duration) var(--dropdown-cubic);
+    z-index: 15;
 }
 
 .header {
