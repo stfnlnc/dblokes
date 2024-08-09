@@ -18,12 +18,15 @@ closeHeader.addEventListener('click', () => {
 
 // Header background scroll
 const header = document.querySelector('header')
+const logoMobile = document.querySelector('.logo-mobile')
 
 function headerBg () {
     if(window.scrollY > 200) {
         header.style.backgroundColor = 'var(--secondary-dark)'
+        logoMobile.style.opacity = '1'
     } else {
         header.style.backgroundColor = 'transparent'
+        logoMobile.style.opacity = '0'
     }
 }
 

@@ -28,6 +28,11 @@ header {
     }
 }
 
+.logo-mobile {
+    opacity: 0;
+    transition: opacity var(--dropdown-duration) var(--dropdown-cubic);
+}
+
 @media screen and (max-width: 680px) {
     .header {
         &__logo {
