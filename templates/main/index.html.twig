@@ -6,11 +6,11 @@
     <meta name="description" content="Nous consacrons notre temps à la recherche, au nettoyage, à l’ouverture et l’entretien de nouveaux sites
                 de blocs. Nous organisons aussi des sorties et événements pour partager au plus grand nombre notre
                 travail.">
-    <meta property="og:title" content="D-Blokés" />
+    <meta property="og:title" content="D-Blokés"/>
     <meta property="og:description" content="Nous consacrons notre temps à la recherche, au nettoyage, à l’ouverture et l’entretien de nouveaux sites
                 de blocs. Nous organisons aussi des sorties et événements pour partager au plus grand nombre notre
-                travail." />
-    <meta property="og:url" content="{{ path('app_index') }}" />
+                travail."/>
+    <meta property="og:url" content="{{ path('app_index') }}"/>
     {{ parent() }}
 {% endblock %}
 
@@ -26,7 +26,8 @@
     <section class="container__large secondary-dark--bg primary-light">
         <div class="container flex row align--center justify--center gap--8 col-mobile">
             <div class="w--50 w-100-mobile">
-                <h3 class="w--70"><span class="blaak">Escalade</span> et développement de sites dans les <span class="blaak">Pyrénées</span></h3>
+                <h3 class="w--70"><span class="blaak">Escalade</span> et développement de sites dans les <span
+                            class="blaak">Pyrénées</span></h3>
             </div>
             <p class="text__l w--50 w-100-mobile">
                 Basée à Pau, notre association D+Blokés vise à promouvoir la pratique de l’escalade en extérieur.
@@ -49,78 +50,90 @@
                 </p>
             </div>
             <div class="flex row gap--11 col-mobile">
-                <card class="secondary-orange--bg flex col align--start justify--space-between">
-                    <div class="flex col gap--4">
-                        <div class="card__icon">
-                            <img src="{{ asset('images/hand.svg') }}" alt="">
+                <a href="{{ path('app_asso') }}">
+                    <card class="secondary-orange--bg flex col align--start justify--space-between">
+                        <div class="flex col gap--4">
+                            <div class="card__icon">
+                                <img src="{{ asset('images/hand.svg') }}" alt="">
+                            </div>
+                            <p class="text__l">
+                                Je souhaite soutenir l’association
+                            </p>
                         </div>
-                        <p class="text__l">
-                            Je souhaite soutenir l’association
-                        </p>
-                    </div>
-                    <a href="{{ path('app_asso') }}" class="text__m flex row align--center justify--space-between w--100">
-                        Adhérer à D-Blokés
-                        <div class="card__arrow">
-                            <svg class="icon--secondary-orange" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.7076 8.70711C14.0981 8.31658 14.0981 7.68342 13.7076 7.29289L7.34363 0.928932C6.95311 0.538408 6.31994 0.538408 5.92942 0.928932C5.5389 1.31946 5.5389 1.95262 5.92942 2.34315L11.5863 8L5.92942 13.6569C5.5389 14.0474 5.5389 14.6805 5.92942 15.0711C6.31994 15.4616 6.95311 15.4616 7.34363 15.0711L13.7076 8.70711ZM0.000488283 9L13.0005 9L13.0005 7L0.000488279 7L0.000488283 9Z"></path>
-                            </svg>
+                        <div class="text__m flex row align--center justify--space-between w--100">
+                            Adhérer à D-Blokés
+                            <div class="card__arrow">
+                                <svg class="icon--secondary-orange" viewBox="0 0 14 16"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.7076 8.70711C14.0981 8.31658 14.0981 7.68342 13.7076 7.29289L7.34363 0.928932C6.95311 0.538408 6.31994 0.538408 5.92942 0.928932C5.5389 1.31946 5.5389 1.95262 5.92942 2.34315L11.5863 8L5.92942 13.6569C5.5389 14.0474 5.5389 14.6805 5.92942 15.0711C6.31994 15.4616 6.95311 15.4616 7.34363 15.0711L13.7076 8.70711ZM0.000488283 9L13.0005 9L13.0005 7L0.000488279 7L0.000488283 9Z"></path>
+                                </svg>
+                            </div>
                         </div>
-                    </a>
-                </card>
-                <card class="secondary-green--bg flex col align--start justify--space-between">
-                    <div class="flex col gap--4">
-                        <div class="card__icon">
-                            <img src="{{ asset('images/map.svg') }}" alt="">
+                    </card>
+                </a>
+                <a href="{{ path('app_topo') }}">
+                    <card class="secondary-green--bg flex col align--start justify--space-between">
+                        <div class="flex col gap--4">
+                            <div class="card__icon">
+                                <img src="{{ asset('images/map.svg') }}" alt="">
+                            </div>
+                            <p class="text__l">
+                                Je souhaite découvrir le topo
+                            </p>
                         </div>
-                        <p class="text__l">
-                            Je souhaite découvrir le topo
-                        </p>
-                    </div>
-                    <a href="{{ path('app_topo') }}" class="text__m flex row align--center justify--space-between w--100">
-                        Découvrir le topo
-                        <div class="card__arrow">
-                            <svg class="icon--secondary-green" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.7076 8.70711C14.0981 8.31658 14.0981 7.68342 13.7076 7.29289L7.34363 0.928932C6.95311 0.538408 6.31994 0.538408 5.92942 0.928932C5.5389 1.31946 5.5389 1.95262 5.92942 2.34315L11.5863 8L5.92942 13.6569C5.5389 14.0474 5.5389 14.6805 5.92942 15.0711C6.31994 15.4616 6.95311 15.4616 7.34363 15.0711L13.7076 8.70711ZM0.000488283 9L13.0005 9L13.0005 7L0.000488279 7L0.000488283 9Z"></path>
-                            </svg>
+                        <div class="text__m flex row align--center justify--space-between w--100">
+                            Découvrir le topo
+                            <div class="card__arrow">
+                                <svg class="icon--secondary-green" viewBox="0 0 14 16"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.7076 8.70711C14.0981 8.31658 14.0981 7.68342 13.7076 7.29289L7.34363 0.928932C6.95311 0.538408 6.31994 0.538408 5.92942 0.928932C5.5389 1.31946 5.5389 1.95262 5.92942 2.34315L11.5863 8L5.92942 13.6569C5.5389 14.0474 5.5389 14.6805 5.92942 15.0711C6.31994 15.4616 6.95311 15.4616 7.34363 15.0711L13.7076 8.70711ZM0.000488283 9L13.0005 9L13.0005 7L0.000488279 7L0.000488283 9Z"></path>
+                                </svg>
+                            </div>
                         </div>
-                    </a>
-                </card>
-                <card class="secondary-beige--bg flex col align--start justify--space-between">
-                    <div class="flex col gap--4">
-                        <div class="card__icon">
-                            <img src="{{ asset('images/pin.svg') }}" alt="">
+                    </card>
+                </a>
+                <a href="{{ path('app_contact') }}">
+                    <card class="secondary-beige--bg flex col align--start justify--space-between">
+                        <div class="flex col gap--4">
+                            <div class="card__icon">
+                                <img src="{{ asset('images/pin.svg') }}" alt="">
+                            </div>
+                            <p class="text__l">
+                                Je souhaite pratiquer l'escalade en extérieur
+                            </p>
                         </div>
-                        <p class="text__l">
-                            Je souhaite pratiquer l'escalade en extérieur
-                        </p>
-                    </div>
-                    <a href="{{ path('app_contact') }}" class="text__m flex row align--center justify--space-between w--100">
-                        Participer aux sorties
-                        <div class="card__arrow">
-                            <svg class="icon--secondary-beige" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.7076 8.70711C14.0981 8.31658 14.0981 7.68342 13.7076 7.29289L7.34363 0.928932C6.95311 0.538408 6.31994 0.538408 5.92942 0.928932C5.5389 1.31946 5.5389 1.95262 5.92942 2.34315L11.5863 8L5.92942 13.6569C5.5389 14.0474 5.5389 14.6805 5.92942 15.0711C6.31994 15.4616 6.95311 15.4616 7.34363 15.0711L13.7076 8.70711ZM0.000488283 9L13.0005 9L13.0005 7L0.000488279 7L0.000488283 9Z"></path>
-                            </svg>
+                        <div class="text__m flex row align--center justify--space-between w--100">
+                            Participer aux sorties
+                            <div class="card__arrow">
+                                <svg class="icon--secondary-beige" viewBox="0 0 14 16"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.7076 8.70711C14.0981 8.31658 14.0981 7.68342 13.7076 7.29289L7.34363 0.928932C6.95311 0.538408 6.31994 0.538408 5.92942 0.928932C5.5389 1.31946 5.5389 1.95262 5.92942 2.34315L11.5863 8L5.92942 13.6569C5.5389 14.0474 5.5389 14.6805 5.92942 15.0711C6.31994 15.4616 6.95311 15.4616 7.34363 15.0711L13.7076 8.70711ZM0.000488283 9L13.0005 9L13.0005 7L0.000488279 7L0.000488283 9Z"></path>
+                                </svg>
+                            </div>
                         </div>
-                    </a>
-                </card>
-                <card class="secondary-kaki--bg flex col align--start justify--space-between">
-                    <div class="flex col gap--4">
-                        <div class="card__icon">
-                            <img src="{{ asset('images/mountain.svg') }}" alt="">
+                    </card>
+                </a>
+                <a href="{{ path('app_festival') }}">
+                    <card class="secondary-kaki--bg flex col align--start justify--space-between">
+                        <div class="flex col gap--4">
+                            <div class="card__icon">
+                                <img src="{{ asset('images/mountain.svg') }}" alt="">
+                            </div>
+                            <p class="text__l">
+                                Je souhaite participer aux évènements
+                            </p>
                         </div>
-                        <p class="text__l">
-                            Je souhaite participer aux évènements
-                        </p>
-                    </div>
-                    <a href="{{ path('app_festival') }}" class="text__m flex row align--center justify--space-between w--100">
-                        Le Boc-Kipik
-                        <div class="card__arrow">
-                            <svg class="icon--secondary-kaki" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.7076 8.70711C14.0981 8.31658 14.0981 7.68342 13.7076 7.29289L7.34363 0.928932C6.95311 0.538408 6.31994 0.538408 5.92942 0.928932C5.5389 1.31946 5.5389 1.95262 5.92942 2.34315L11.5863 8L5.92942 13.6569C5.5389 14.0474 5.5389 14.6805 5.92942 15.0711C6.31994 15.4616 6.95311 15.4616 7.34363 15.0711L13.7076 8.70711ZM0.000488283 9L13.0005 9L13.0005 7L0.000488279 7L0.000488283 9Z"></path>
-                            </svg>
+                        <div class="text__m flex row align--center justify--space-between w--100">
+                            Le Boc-Kipik
+                            <div class="card__arrow">
+                                <svg class="icon--secondary-kaki" viewBox="0 0 14 16"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.7076 8.70711C14.0981 8.31658 14.0981 7.68342 13.7076 7.29289L7.34363 0.928932C6.95311 0.538408 6.31994 0.538408 5.92942 0.928932C5.5389 1.31946 5.5389 1.95262 5.92942 2.34315L11.5863 8L5.92942 13.6569C5.5389 14.0474 5.5389 14.6805 5.92942 15.0711C6.31994 15.4616 6.95311 15.4616 7.34363 15.0711L13.7076 8.70711ZM0.000488283 9L13.0005 9L13.0005 7L0.000488279 7L0.000488283 9Z"></path>
+                                </svg>
+                            </div>
                         </div>
-                    </a>
-                </card>
+                    </card>
+                </a>
             </div>
         </div>
         <div class="container flex row gap--20 justify--space-between col-mobile">
@@ -167,19 +180,32 @@
                 <h3>Découvrir les actualités de
                     <span class="blaak">D+Blokés</span></h3>
                 <p class="text__l">
-                    Suivre toute l’actualité de l’association sur <a target="_blank" class="underline" href="https://www.instagram.com/dblokes/">notre page Instagram</a>
+                    Suivre toute l’actualité de l’association sur <a target="_blank" class="underline"
+                                                                     href="https://www.instagram.com/dblokes/">notre
+                        page Instagram</a>
                 </p>
             </div>
             <div class="flex row gap--11 col-mobile ">
-                <card class="secondary-orange--bg flex col align--start justify--space-between" style="background-image: url({{ asset('images/social-1.webp') }}); background-position: center; background-size: cover;">
+                <a href="https://www.instagram.com/dblokes/">
+                    <card class="secondary-orange--bg flex col align--start justify--space-between"
+                          style="background-image: url({{ asset('images/social-1.webp') }}); background-position: center; background-size: cover;">
 
-                </card>
-                <card class="secondary-green--bg flex col align--start justify--space-between" style="background-image: url({{ asset('images/social-2.webp') }}); background-position: center; background-size: cover;">
+                    </card>
+                </a>
+                <a href="https://www.instagram.com/dblokes/">
 
-                </card>
-                <card class="secondary-beige--bg flex col align--start justify--space-between" style="background-image: url({{ asset('images/social-3.webp') }}); background-position: center; background-size: cover;">
+                    <card class="secondary-green--bg flex col align--start justify--space-between"
+                          style="background-image: url({{ asset('images/social-2.webp') }}); background-position: center; background-size: cover;">
 
-                </card>
+                    </card>
+                </a>
+                <a href="https://www.instagram.com/dblokes/">
+
+                    <card class="secondary-beige--bg flex col align--start justify--space-between"
+                          style="background-image: url({{ asset('images/social-3.webp') }}); background-position: center; background-size: cover;">
+
+                    </card>
+                </a>
             </div>
         </div>
     </section>
