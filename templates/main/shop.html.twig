@@ -12,9 +12,10 @@
 
 {% block body %}
     <section class="container__large"
-             style="background-image: linear-gradient(rgba(0,0,0,0.6) 50%, rgba(0,0,0,0)), url({{ asset('images/shop.webp') }}); background-position: center; background-size: cover;">
+             style="background-image: linear-gradient(rgba(0,0,0,0.6) 50%, rgba(0,0,0,0)), url({{ asset('images/shop.webp') }}); background-position: 0 40%; background-size: cover;">
         <div class="container container__top flex col align--center justify--center gap--4 primary-light">
             <h1 class="blaak">À venir</h1>
+            <p class="text__l">Pour commander le topo, c'est <a class="underline" href="{{ path('app_topo') }}">par ici</a></p>
         </div>
     </section>
 {% endblock %}

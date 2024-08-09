@@ -9,6 +9,9 @@
   object-fit: cover;
   object-position: center;
 }
+.img__home__portrait {
+  aspect-ratio: 3/4;
+}
 .img__topo {
   width: 100%;
   border-radius: 1.875rem;
@@ -649,7 +652,7 @@ blockquote > p {
   --h6: 1rem;
   --font-heading: "Overused Grotesk", sans-serif;
   --weight-heading: 500;
-  --letter-spacing-heading: 0;
+  --letter-spacing-heading: 0.2rem;
 }
 
 .blaak {

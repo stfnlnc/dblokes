@@ -5,6 +5,9 @@
         border-radius: 1.875rem;
         object-fit: cover;
         object-position: center;
+        &__portrait {
+            aspect-ratio: 3/4;
+        }
     }
     &__topo {
         width: 100%;

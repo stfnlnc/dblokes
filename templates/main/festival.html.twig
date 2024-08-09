@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Granitkipik - {{ parent() }}{% endblock %}
+{% block title %}Boc-Kipik - {{ parent() }}{% endblock %}
 
 {% block meta %}
     <meta name="description" content="On vous donne bientôt des nouvelles !">
@@ -14,8 +14,148 @@
     <section class="container__large"
              style="background-image: linear-gradient(rgba(0,0,0,0.6) 50%, rgba(0,0,0,0)), url({{ asset('images/festival.webp') }}); background-position: center; background-size: cover;">
         <div class="container container__top flex col align--center justify--center gap--4 primary-light">
-            <h1 class="blaak">Granitkipik</h1>
-            <p class="text__l">On vous donne bientôt des nouvelles !</p>
+            <h1 class="blaak">Boc-Kipik</h1>
+            <p class="text__l text-center">
+                Le meilleur du Bloc Ossau Contest et du Granitkipik ! <br>
+                <span class="text__m">* En collaboration avec l'association Guétapan</span>
+            </p>
+        </div>
+    </section>
+    <section class="container__large secondary-light--bg primary-dark">
+        <div class="container flex row gap--20 justify--space-between col-mobile">
+            <div class="w--50 w-100-mobile">
+                <img class="img__home" src="{{ asset('images/bockipik-1.webp') }}" alt="">
+            </div>
+            <div class="w--50 flex col align--start gap--8 w-100-mobile">
+                <h3>
+                    C'est quoi le <span class="blaak">Boc-Kipik</span> ?
+                </h3>
+                <p class="text__l">
+                    Le Boc-Kipik est une manifestation sportive, mais c'est avant tout un événement convivial à partager dans un environnement naturel qui nécessite une attention particulière.
+                    <br><br>
+                    Cette édition se déroulera le <strong>21 & 22 septembre 2024 de 10h00 à 18h00 sur le site de Miégebat</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="container__large secondary-dark--bg primary-light">
+        <div class="container flex row gap--20 justify--space-between col-mobile">
+            <div class="w--50 flex col align--start gap--8 w-100-mobile">
+                <h3>
+                    On vous présente le <span class="blaak">Boc-Kipik</span> !
+                </h3>
+                <p class="text__l">
+                    Dans une dynamique de développement de la vallée, notre souhait est de faire connaître aux grimpeurs
+                    le site récent de <strong>Miegebat</strong> après les succès du site de Pont de Camps pendant plus de 10 ans.
+                    <br><br>
+                    Autour de cet événement convivial, les associations <strong>Guetapan</strong> et <strong>D-Blokés</strong> sont heureuses de
+                    rassembler les grimpeurs dans ce cadre préservé et privilégié.
+                    <br><br>
+                    En effet, il existe peu d’évènements
+                    d’escalade en extérieur et il nous paraît essentiel de le mettre en avant, de faire découvrir le contact
+                    avec le rocher, de sensibiliser les pratiquants au respect de cet environnement naturel qui nous est
+                    cher.
+                </p>
+            </div>
+            <div class="w--50 w-100-mobile">
+                <img class="img__home img__home__portrait" src="{{ asset('images/bockipik-2.webp') }}" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="container__large secondary-light--bg primary-dark">
+        <div class="container flex row gap--20 justify--space-between col-mobile">
+            <div class="w--50 w-100-mobile">
+                <img class="img__home" src="{{ asset('images/bockipik-3.webp') }}" alt="">
+            </div>
+            <div class="w--50 flex col align--start gap--8 w-100-mobile">
+                <h3>
+                    Le <span class="blaak">Boc-Kipik</span> Kids
+                </h3>
+                <p class="text__l">
+                    Après le fort succès des précédentes éditions, ce circuit adapté aux plus jeunes est renouvelé. Il
+                    permet aux enfants de participer à une compétition sur site naturel, en toute convivialité.
+                    <br><br>
+                    À l’occasion du premier contest enfant de moins de 13 ans sur le site de Miégebat, un tout nouveau circuit composé de blocs inédits sera proposé
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="container__large secondary-dark--bg primary-light">
+        <div class="container flex row gap--20 justify--space-between col-mobile">
+            <div class="w--50 flex col align--start gap--8 w-100-mobile">
+                <h3>
+                    Le <span class="blaak">Boc-Kipik</span>
+                </h3>
+                <p class="text__l">
+                    Cinq autres circuits de difficultés différentes (jaune, bleu, rouge, noir et blanc) seront mis en place
+                    pour les adultes, du débutant à l'expert.
+                    <br><br>
+                    Une cinquantaine de parcours de blocs seront proposés pour l'événement dans des difficultés allant du 4b au 8a bloc. Chaque bloc réalisé devra
+                    être validé par un autre participant.
+                    <br><br>
+                    Un classement pour chaque catégorie sera établi à la fin du contest.
+                </p>
+            </div>
+            <div class="w--50 w-100-mobile">
+                <img class="img__home img__home__portrait" src="{{ asset('images/bockipik-4.webp') }}" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="container__large secondary-light--bg primary-dark">
+        <div class="container flex row gap--20 justify--space-between col-mobile">
+            <div class="w--50 w-100-mobile">
+                <img class="img__home" src="{{ asset('images/bockipik-5.webp') }}" alt="">
+            </div>
+            <div class="w--50 flex col align--start gap--8 w-100-mobile">
+                <h3>
+                    Le <span class="blaak">Bloc Ultime</span>
+                </h3>
+                <p class="text__l">
+                    C’est un contest dans le contest ! Le principe est simple : libérer une ligne particulièrement difficile et esthétique n’ayant jamais été grimpée (possible 8b bloc).
+                    <br><br>
+                    La grimpeuse ou le grimpeur qui réussira cette « libération » remportera le trophée du <strong>Bloc Ultime</strong> !
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="container__large secondary-dark--bg primary-light">
+        <div class="container flex row gap--20 justify--space-between col-mobile">
+            <div class="w--50 flex col align--start gap--8 w-100-mobile">
+                <h3>
+                    Des <span class="blaak">animations</span> variées
+                </h3>
+                <p class="text__l">
+                    Si le bloc est au cœur de l'événement, des animations telles que de la grimpe dans les arbres, des
+                    compteurs béarnais et du yoga seront également proposées, à l’image de la première édition du
+                    Granitkipik.
+                </p>
+            </div>
+            <div class="w--50 w-100-mobile">
+                <img class="img__home" src="{{ asset('images/bockipik-6.webp') }}" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="container__large secondary-light--bg primary-dark">
+        <div class="container flex row gap--20 justify--center col-mobile">
+            <div class="w--50 flex col align--start gap--8 w-100-mobile">
+                <h3>
+                    <span class="blaak">Merci !</span>
+                </h3>
+                <p class="text__m">
+                    Les éditions précédentes du Bloc Ossau Contest et du
+                    Granitkipik ont été réalisées chaque année avec les
+                    autorisations et le soutien des acteurs locaux et
+                    institutionnels : <br><br>
+
+                    La Mairie de Laruns,
+                    le Parc national des Pyrénées,
+                    l’ONF,
+                    l’Office de tourisme de Laruns,
+                    la CCVO,
+                    la FFME
+                    et le Comité territorial 64 de la FFME.
+                </p>
+            </div>
         </div>
     </section>
 {% endblock %}
