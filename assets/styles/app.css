@@ -19,6 +19,14 @@
   width: 100%;
   border-radius: 1.875rem;
 }
+.img__sponsor {
+  width: 120px;
+  height: fit-content;
+}
+.img__sponsor__s {
+  width: 100px;
+  height: fit-content;
+}
 
 .menu__item {
   color: var(--primary-dark);
@@ -773,6 +781,10 @@ h1, .h1 {
   --danger: #e04d4d;
 }
 
+.invert {
+  filter: invert(100);
+}
+
 .primary-dark {
   color: var(--primary-dark);
 }
@@ -892,7 +904,6 @@ header {
   height: 80vh;
   min-height: 600px;
   max-width: 400px;
-  overflow: scroll;
   transform: translate(-120%, 0);
   transition: transform var(--dropdown-duration) var(--dropdown-cubic);
 }

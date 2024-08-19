@@ -22,7 +22,6 @@ header {
         height: 80vh;
         min-height: 600px;
         max-width: 400px;
-        overflow: scroll;
         transform: translate(-120%, 0);
         transition: transform var(--dropdown-duration) var(--dropdown-cubic);
     }

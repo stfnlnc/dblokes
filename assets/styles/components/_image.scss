@@ -16,4 +16,12 @@
         width: 100%;
         border-radius: 1.875rem;
     }
+    &__sponsor {
+        width: 120px;
+        height: fit-content;
+        &__s {
+            width: 100px;
+            height: fit-content;
+        }
+    }
 }

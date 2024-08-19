@@ -14,6 +14,10 @@
     --danger: #e04d4d;
 }
 
+.invert {
+    filter: invert(100);
+}
+
 .primary-dark {
     color: var(--primary-dark);
 
