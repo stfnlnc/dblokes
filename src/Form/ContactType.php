@@ -48,7 +48,10 @@ class ContactType extends AbstractType
                     'class' => 'form-textarea h--20'
                 ]
             ])
-            ->add("recaptcha", ReCaptchaType::class);
+            ->add('captcha', Recaptcha3Type::class, [
+                'constraints' => new Recaptcha3(),
+                'locale' => 'fr',
+            ]);
         ;
     }
 
