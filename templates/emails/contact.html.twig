@@ -1,0 +1,18 @@
+<div style="width: fit-content; margin: 10px; padding: 20px; border: 1px solid black; border-radius: 10px; background-color: white; color: black; font-family: Arial, sans-serif">
+    <div>
+        <strong>Nom :</strong> <br>
+        {{ lastname }} {{ firstname }}
+    </div><br><br>
+    <div>
+        <strong>E-mail :</strong> <br>
+        <a href="mailto:{{ mail }}">{{ mail }}</a>
+    </div><br><br>
+    <div>
+        <strong>Tél. :</strong> <br>
+        <a href="tel:{{ phone }}">{{ phone }}</a>
+    </div><br><br>
+    <div>
+        <strong>Message :</strong> <br>
+        {{ message }}
+    </div>
+</div>

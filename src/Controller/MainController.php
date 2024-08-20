@@ -2,8 +2,14 @@
 
 namespace App\Controller;
 
+use App\Form\ContactType;
+use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
+use Symfony\Component\Mailer\MailerInterface;
+use Symfony\Component\Mime\Email;
 use Symfony\Component\Routing\Attribute\Route;
 
 #[Route('/', name: 'app_')]
@@ -40,8 +46,29 @@ class MainController extends AbstractController
     }
 
     #[Route('/contact', name: 'contact')]
-    public function contact(): Response
+    public function contact(MailerInterface $mailer, Request $request): Response
     {
-        return $this->render('main/contact.html.twig');
+        $form = $this->createForm(ContactType::class);
+        $form->handleRequest($request);
+        if($form->isSubmitted() && $form->isValid()) {
+            $data = $form->getData();
+
+            $email = (new TemplatedEmail())
+                ->to('contact.dblokes@gmail.com')
+                ->from($data['email'])
+                ->replyTo($data['email'])
+                ->subject('Nouveau message depuis dblokes.fr')
+                ->htmlTemplate('emails/contact.html.twig')
+                ->context(['lastname' => $data['lastname'], 'firstname' => $data['firstname'], 'mail' => $data['email'], 'phone' => $data['phone'], 'message' => $data['message']]);
+            try {
+                $mailer->send($email);
+            } catch (TransportExceptionInterface $e) {
+
+            }
+        }
+
+        return $this->render('main/contact.html.twig', [
+            'form' => $form,
+        ]);
     }
 }
