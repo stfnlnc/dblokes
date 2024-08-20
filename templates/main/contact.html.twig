@@ -23,6 +23,13 @@
             </div>
             <div class="w--50 flex col gap--4 w-100-mobile">
                 <div>
+                    {% for label, messages in app.flashes %}
+                        {% for message in messages %}
+                        <div class="alert alert-{{ label }}">
+                            {{ message }}
+                        </div>
+                        {% endfor %}
+                    {% endfor %}
                     {{ form_start(form, {'attr': {'class': 'grid grid--2 grid--1-mobile grid-gap--4'} }) }}
                     <label class="form-label" for="lastname">
                         Nom*

@@ -62,11 +62,12 @@ class MainController extends AbstractController
                 ->context(['lastname' => $data['lastname'], 'firstname' => $data['firstname'], 'mail' => $data['email'], 'phone' => $data['phone'], 'message' => $data['message']]);
             try {
                 $mailer->send($email);
+                $this->addFlash('success', 'Votre message a bien été envoyé !');
+                return $this->redirectToRoute('app_contact');
             } catch (TransportExceptionInterface $e) {
-
+                $this->addFlash('danger', 'Une erreur est survenue !');
             }
         }
-
         return $this->render('main/contact.html.twig', [
             'form' => $form,
         ]);
