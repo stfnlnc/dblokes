@@ -28,6 +28,10 @@
     }
 }
 
+#smooth-wrapper, #smooth-content {
+    width: 100%;
+}
+
 @media screen and (max-width: 1080px) {
     .container {
         &__top {

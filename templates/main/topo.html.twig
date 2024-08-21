@@ -15,21 +15,21 @@
 {% endblock %}
 
 {% block body %}
-    <section class="container__large"
+    <section id="top-content" class="container__large"
              style="background-image: linear-gradient(rgba(0,0,0,0.6) 50%, rgba(0,0,0,0)), url({{ asset('images/topo.webp') }}); background-position: 0 30%; background-size: cover;">
         <div class="container container__top flex col align--center justify--center gap--4 primary-light">
             <h1 class="blaak">Le topo</h1>
         </div>
     </section>
     <section id="decouvrir-le-topo" class="container__large secondary-light--bg flex col align--center">
-        <div class="container flex row gap--20 justify--space-between col-mobile gap-large-mobile border--bottom border-stroke-dark">
+        <div class="container flex row gap--20 justify--space-between col-mobile gap-large-mobile">
             <div class="w--50 w-100-mobile">
                 <img class="img__topo" src="{{ asset('images/topo.jpg') }}" alt="">
             </div>
             <div class="w--50 flex col align--start gap--8 w-100-mobile">
-                <h3>
+                <h3 class="title">
                     Blocs
-                    <span class="blaak">en vallée d'Ossau</span>
+                    <span class="blaak">en Vallée d'Ossau</span>
                 </h3>
                 <p class="text__l">
                     Cet ouvrage a été réalisé après plusieurs années de recherche. Les informations ont été compilées
@@ -53,6 +53,8 @@
                 </p>
             </div>
         </div>
+    </section>
+    <section id="decouvrir-le-topo" class="container__large secondary-dark--bg primary-light flex col align--center">
         <div id="points-de-vente" class="container flex col align--center justify--center gap--16">
             <div class="flex col gap--8 w--60 text-center w-100-mobile">
                 <h3>Les points de <span class="blaak">vente</span></h3>
@@ -60,8 +62,8 @@
                     Trouver le topo en boutique.
                 </p>
             </div>
-            <div class="grid grid--4 grid--1-mobile grid-gap--8 border--bottom border-stroke-dark pb--20">
-                <card class="secondary-green--bg primary-dark flex col align--start justify--space-between">
+            <div class="grid grid--4 grid--1-mobile grid-gap--8 pb--20">
+                <card class="image secondary-green--bg primary-dark flex col align--start justify--space-between">
                     <div class="flex col gap--3">
                         <h5>
                             <span class="blaak">Pyrénées-Atlantiques</span> (64)
@@ -81,7 +83,7 @@
                         </p>
                     </div>
                 </card>
-                <card class="secondary-green--bg primary-dark flex col align--start justify--space-between">
+                <card class="image secondary-green--bg primary-dark flex col align--start justify--space-between">
                     <div class="flex col gap--3">
                         <h5>
                             <span class="blaak">Hautes-Pyrénées</span> (65)
@@ -95,7 +97,7 @@
                         </p>
                     </div>
                 </card>
-                <card class="secondary-green--bg primary-dark flex col align--start justify--space-between">
+                <card class="image secondary-green--bg primary-dark flex col align--start justify--space-between">
                     <div class="flex col gap--3">
                         <h5>
                             <span class="blaak">Haute-Garonne</span> (31)
@@ -107,7 +109,7 @@
                         </p>
                     </div>
                 </card>
-                <card class="secondary-green--bg primary-dark flex col align--start justify--space-between">
+                <card class="image secondary-green--bg primary-dark flex col align--start justify--space-between">
                     <div class="flex col gap--3">
                         <h5>
                             <span class="blaak">Gironde</span> (33)
@@ -117,7 +119,7 @@
                         </p>
                     </div>
                 </card>
-                <card class="secondary-green--bg primary-dark flex col align--start justify--space-between">
+                <card class="image secondary-green--bg primary-dark flex col align--start justify--space-between">
                     <div class="flex col gap--3">
                         <h5>
                             <span class="blaak">Landes</span> (40)
@@ -129,7 +131,7 @@
                         </p>
                     </div>
                 </card>
-                <card class="secondary-green--bg primary-dark flex col align--start justify--space-between">
+                <card class="image secondary-green--bg primary-dark flex col align--start justify--space-between">
                     <div class="flex col gap--3">
                         <h5>
                             <span class="blaak">Espagne</span>
@@ -146,19 +148,21 @@
                     </div>
                 </card>
             </div>
-            <div id="commander-le-topo" class="flex col align--center justify--center gap--8 w--60 text-center w-100-mobile">
-                <h3>Commander <span class="blaak">le topo</span></h3>
-                <p class="text__l">
-                    Trouver le topo en ligne.
-                </p>
-                <div class="flex row col-mobile gap--4">
-                    <a target="_blank" class="btn btn__lg btn__dark" href="https://www.auvieuxcampeur.fr/blocs-en-vallee-d-ossau.html">Au Vieux Campeur</a>
-                    <a target="_blank" class="btn btn__lg btn__dark" href="https://klettern-shop.de/kletterfuehrer/1709-blocs-en-vallee-d-ossau-9791069998391">Klettern
-                        Shop</a>
-                    <a target="_blank" class="btn btn__lg btn__dark" href="https://tmms-shop.de/kletterfuehrer/1709-blocs-en-vallee-d-ossau-9791069998391.html">TMMS
-                        Shop</a>
-                    <a target="_blank" class="btn btn__lg btn__dark" href="https://www.barrabes.com/fr/chincholle-dorian-blocs-vallee-d39ossau/product-269107">Boutique Barrabes</a>
-                </div>
+        </div>
+    </section>
+    <section id="decouvrir-le-topo" class="container__large secondary-light--bg flex col align--center">
+        <div id="commander-le-topo" class="flex container col align--center justify--center gap--8 w--100 text-center w-100-mobile">
+            <h3 class="title">Commander <span class="blaak">le topo</span></h3>
+            <p class="text__l">
+                Trouver le topo en ligne.
+            </p>
+            <div class="flex row gap--4 justify--center wrap">
+                <a target="_blank" class="btn btn__lg" href="https://www.auvieuxcampeur.fr/blocs-en-vallee-d-ossau.html">Au Vieux Campeur</a>
+                <a target="_blank" class="btn btn__lg" href="https://klettern-shop.de/kletterfuehrer/1709-blocs-en-vallee-d-ossau-9791069998391">Klettern
+                    Shop</a>
+                <a target="_blank" class="btn btn__lg" href="https://tmms-shop.de/kletterfuehrer/1709-blocs-en-vallee-d-ossau-9791069998391.html">TMMS
+                    Shop</a>
+                <a target="_blank" class="btn btn__lg" href="https://www.barrabes.com/fr/chincholle-dorian-blocs-vallee-d39ossau/product-269107">Boutique Barrabes</a>
             </div>
         </div>
     </section>

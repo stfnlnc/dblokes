@@ -25,6 +25,62 @@
         {% endblock %}
 
         {% block javascripts %}
+            <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+            <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+            <!-- The following plugin is only available for Club GSAP members.-->
+            <script src="{{ asset('gsap/minified/ScrollSmoother.min.js') }}"></script>
+            <script src="{{ asset('gsap/minified/SplitText.min.js') }}"></script>
+
+            <script>
+                // use a script tag or an external JS file
+                document.addEventListener("DOMContentLoaded", (event) => {
+                    gsap.registerPlugin(ScrollTrigger,ScrollSmoother, SplitText)
+                    let smoother = ScrollSmoother.create({
+                        wrapper: '#smooth-wrapper',
+                        content: '#smooth-content',
+                        smooth: 2,
+                    });
+                    const titles = document.querySelectorAll(".title");
+                    if (titles) {
+                        titles.forEach((title) => {
+                            const splitTitle = new SplitText(title, {type: "words"});
+                            const chars = splitTitle.words;
+
+                            gsap.from(chars, {
+                                scrollTrigger: {
+                                    trigger: title,
+                                    start: 'top 80%',
+                                    end: '',
+                                    markers: false
+                                },
+                                y: '100%',
+                                opacity: 0,
+                                duration: 0.5,
+                                ease: 'power2.out',
+                                stagger: 0.05,
+                            });
+                        })
+                    }
+                    const images = document.querySelectorAll(".image");
+                    if (images) {
+                        images.forEach((image) => {
+                            gsap.from(image, {
+                                scrollTrigger: {
+                                    trigger: image,
+                                    start: 'top 80%',
+                                    end: '',
+                                    markers: false
+                                },
+                                opacity: 0,
+                                duration: 0.8,
+                                ease: 'power2.inOut'
+                            });
+                        })
+                    }
+                });
+            </script>
             {% block importmap %}{{ importmap('app') }}{% endblock %}
         {% endblock %}
     </head>
@@ -74,7 +130,10 @@
                 </div>
             </div>
         </header>
-        {% block body %}{% endblock %}
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+            {% block body %}{% endblock %}
+
         <footer class="container__large secondary-dark--bg">
             <div class="container flex col gap--11">
                 <div class="flex row align--start gap--8 justify--space-between col-mobile">
@@ -160,6 +219,8 @@
                 </div>
             </div>
         </footer>
+            </div>
+        </div>
     </main>
     </body>
 </html>

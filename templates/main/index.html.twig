@@ -16,7 +16,7 @@
 
 {% block body %}
 
-    <section class="container__large"
+    <section id="top-content" class="container__large"
              style="background-image: linear-gradient(rgba(0,0,0,0.6) 50%, rgba(0,0,0,0)), url({{ asset('images/home-background.webp') }}); background-position: top; background-size: cover;">
         <div class="container container__top flex col align--center justify--center gap--4">
             <img class="header__logo" src="{{ asset('images/logo.svg') }}" alt="Logo D-Blokés">
@@ -26,7 +26,7 @@
     <section class="container__large secondary-dark--bg primary-light">
         <div class="container flex row align--center justify--center gap--8 col-mobile">
             <div class="w--50 w-100-mobile">
-                <h3 class="w--70"><span class="blaak">Escalade</span> et développement de sites dans les <span
+                <h3 class="w--70 title"><span class="blaak">Escalade</span> et développement de sites dans les <span
                             class="blaak">Pyrénées</span></h3>
             </div>
             <p class="text__l w--50 w-100-mobile">
@@ -50,7 +50,7 @@
                 </p>
             </div>
             <div class="flex row gap--11 col-mobile">
-                <a href="{{ path('app_asso') }}">
+                <a class="image" href="{{ path('app_asso') }}">
                     <card class="secondary-orange--bg flex col align--start justify--space-between">
                         <div class="flex col gap--4">
                             <div class="card__icon">
@@ -71,7 +71,7 @@
                         </div>
                     </card>
                 </a>
-                <a href="{{ path('app_topo') }}">
+                <a class="image" href="{{ path('app_topo') }}">
                     <card class="secondary-green--bg flex col align--start justify--space-between">
                         <div class="flex col gap--4">
                             <div class="card__icon">
@@ -92,7 +92,7 @@
                         </div>
                     </card>
                 </a>
-                <a href="{{ path('app_contact') }}">
+                <a class="image" href="{{ path('app_contact') }}">
                     <card class="secondary-beige--bg flex col align--start justify--space-between">
                         <div class="flex col gap--4">
                             <div class="card__icon">
@@ -113,7 +113,7 @@
                         </div>
                     </card>
                 </a>
-                <a href="{{ path('app_festival') }}">
+                <a class="image" href="{{ path('app_festival') }}">
                     <card class="secondary-kaki--bg flex col align--start justify--space-between">
                         <div class="flex col gap--4">
                             <div class="card__icon">
@@ -141,13 +141,13 @@
                 <img class="img__home" src="{{ asset('images/bockipik-index.webp') }}" alt="">
             </div>
             <div class="w--50 flex col align--start gap--8 w-100-mobile">
-                <h3>
-                    Un évènement dédié à l’escalade de bloc le <span class="blaak">BOC Kipik</span>
+                <h3 class="title">
+                    Un évènement dédié à l’escalade de bloc le <span class="blaak">Boc-Kipik</span>
                 </h3>
                 <p class="text__l">
                     Au cœur de la forêt magique et luxuriante de Miégebat, au frais entre le gave d’Ossau et les chaos
                     de roches des Eaux-Chaudes, à 15 min de Laruns, on vous promet 2 jours de convivialité, de détente
-                    et de grimpe plaisir sur un granit parfait. (mais Kipik un peu quand même)
+                    et de grimpe plaisir sur un granit parfait (mais Kipik un peu quand même).
                 </p>
                 <a href="{{ path('app_festival') }}" class="text__l secondary-orange flex row gap--2 align--center">
                     Découvrir le programme
@@ -186,20 +186,20 @@
                 </p>
             </div>
             <div class="flex row gap--11 col-mobile ">
-                <a href="https://www.instagram.com/dblokes/">
+                <a class="image" href="https://www.instagram.com/dblokes/">
                     <card class="secondary-orange--bg flex col align--start justify--space-between"
                           style="background-image: url({{ asset('images/social-1.webp') }}); background-position: center; background-size: cover;">
 
                     </card>
                 </a>
-                <a href="https://www.instagram.com/dblokes/">
+                <a class="image" href="https://www.instagram.com/dblokes/">
 
                     <card class="secondary-green--bg flex col align--start justify--space-between"
                           style="background-image: url({{ asset('images/social-2.webp') }}); background-position: center; background-size: cover;">
 
                     </card>
                 </a>
-                <a href="https://www.instagram.com/dblokes/">
+                <a class="image" href="https://www.instagram.com/dblokes/">
 
                     <card class="secondary-beige--bg flex col align--start justify--space-between"
                           style="background-image: url({{ asset('images/social-3.webp') }}); background-position: center; background-size: cover;">
