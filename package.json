@@ -10,8 +10,5 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "gsap": "npm:@gsap/shockingly@^3.12.5"
-  }
+  "description": ""
 }
