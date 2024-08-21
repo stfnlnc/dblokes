@@ -26,6 +26,7 @@
 /public/assets/
 /assets/vendor/
 /assets/gsap/
+node_modules/
 ###< symfony/asset-mapper ###
 
 
