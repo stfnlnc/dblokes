@@ -1,0 +1,18 @@
+{% extends '@EasyAdmin/page/content.html.twig' %}
+
+{% block content_title %}Register{% endblock %}
+
+{% block main %}
+    <h1>Register</h1>
+
+    {{ form_errors(registrationForm) }}
+
+    {{ form_start(registrationForm) }}
+        {{ form_row(registrationForm.lastname) }}
+        {{ form_row(registrationForm.firstname) }}
+        {{ form_row(registrationForm.email) }}
+        {{ form_row(registrationForm.plainPassword) }}
+
+        <button type="submit" class="btn btn-primary btn-lg">Sauvegarder</button>
+    {{ form_end(registrationForm) }}
+{% endblock %}
